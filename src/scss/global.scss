@@ -1,0 +1,60 @@
+@import "./variables";
+@import "./mixins";
+@import "./commons";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    @include respond(phone) {
+        font-size: 40.25% !important; 
+      }
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1rem = 9px
+      }
+    
+      @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px
+      }
+    
+      @include respond(big-desktop) {
+        font-size: 75%;  // 1rem = 12px
+      }
+    }
+    
+    body {
+    //   font-family: 'Raleway', sans-serif;
+    //   height: 100vh;
+    //   font-weight: 500;
+    //   font-size: 1.6rem;
+    //   line-height: 1.7;
+      box-sizing: border-box;
+      background-color: var(--primaryBg);
+      color: var(--primaryText);
+      overflow-x: hidden;
+      cursor: default;
+    }
+    
+    
+    // /* width */
+    // ::-webkit-scrollbar {
+    //   width: 5px;
+    // }
+    
+    // /* Track */
+    // ::-webkit-scrollbar-track {
+    //   background-color: var(--secondary);
+    
+    // }
+    
+    // /* Handle */
+    // ::-webkit-scrollbar-thumb {
+    //   background: #233554;
+    //   border-radius: 100px;
+    // }
