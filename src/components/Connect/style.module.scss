@@ -32,6 +32,7 @@
                 @include respond(tab-land) {
                     font-size: var(--bannerTabletTextSize);
                 }
+
                 @include respond(tab-port) {
                     font-size: var(--bannerMobileTextSize);
                 }
@@ -81,9 +82,22 @@
                         grid-template-rows: repeat(6, 1fr);
                     }
 
-                    .infoItem {
-                        font-size: 3.7rem;
-                        color: var(--primaryText);
+                    .bullet {
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+
+                        .infoItem {
+                            font-size: 3rem;
+                            color: var(--primaryText);
+                        }
+                        .dot {
+                            width: 0rem;
+                            height: 0rem;
+                            border-right: 13px solid var(--alternateText);
+                            border-left: 13px solid transparent;
+                            border-bottom: 13px solid transparent;
+                        }
                     }
                 }
 
@@ -95,12 +109,13 @@
                     gap: 3rem;
 
                     p {
-                        font-size: large;
-                        font-weight: bold;
+                        font-size: 1.5rem;
+                        font-weight: 700;
                     }
-
+                    
                     span {
-                        font-size: medium;
+                        font-size: 1.2rem;
+                        color: var(--linkText);
                     }
 
                 }

@@ -37,9 +37,12 @@ export default function Index() {
                                     { link: "LinkedIn" },
                                     { link: "Mail" },
                                 ].map(({ link }, index) => (
-                                    <h3 className={styles.infoItem} key={index}>
-                                        {link}
-                                    </h3>
+                                    <div className={styles.bullet}>
+                                        <span className={styles.dot}></span>
+                                        <h3 className={styles.infoItem} key={index}>
+                                            {link}
+                                        </h3>
+                                    </div>
                                 ))}
                             </div>
                             <div className={styles.infoDetails}>

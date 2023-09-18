@@ -65,10 +65,10 @@ export default function Index({ }) {
                     </div>
                     <div className={styles.options}>
                         <div className={styles.icons}>
-                            <span><InstagramIcon style={{fontSize: "1.5rem"}} /></span>
-                            <span><GitHubIcon style={{fontSize: "1.5rem"}} /></span>
-                            <span><LinkedInIcon style={{fontSize: "1.5rem"}} /></span>
-                            <span><TwitterIcon style={{fontSize: "1.5rem"}} /></span>
+                            <span><InstagramIcon style={{fontSize: "2rem"}} /></span>
+                            <span><GitHubIcon style={{fontSize: "2rem"}} /></span>
+                            <span><LinkedInIcon style={{fontSize: "2rem"}} /></span>
+                            <span><TwitterIcon style={{fontSize: "2rem"}} /></span>
                         </div>
                         <div className={styles.sound}>
                             SOUND ON

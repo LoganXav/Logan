@@ -100,9 +100,13 @@
             transform: rotate(-90deg);
             transform-origin: left;
             cursor: pointer;
-
+            
             @include respond(phone) {
                 opacity: 0;
+            }
+            
+            span{
+                transform: rotate(90deg);
             }
         }
 
