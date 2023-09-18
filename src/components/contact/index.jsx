@@ -1,7 +1,7 @@
 'use client';
 import styles from './style.module.scss';
 
-export default function Index({ }) {
+export default function Index() {
 
     return (
         <>
@@ -42,7 +42,7 @@ export default function Index({ }) {
                                 </div>
                                 <div>
                                     <p>Phone</p>
-                                    <span>+234 9068015741</span>
+                                    <span>+2349068015741</span>
                                 </div>
                             </div>
                         </div>
