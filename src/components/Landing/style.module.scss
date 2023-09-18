@@ -2,7 +2,7 @@
 
 .container {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 90vh;
     // min-height: 93vh;
     display: flex;
     justify-content: center;
@@ -37,6 +37,11 @@
             gap: 5px;
             font-size: var(--navTextSize);
             font-weight: bold;
+            
+            @include respond(tab-port) {
+                font-size: var(--navMobileTextSize);
+            }
+    
         }
     }
 
