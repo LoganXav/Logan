@@ -5,6 +5,10 @@ import { useState, useEffect } from 'react'
 import gsap from 'gsap'
 import { motion } from 'framer-motion';
 import useMousePosition from '../../utils/useMousePosition';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Index({ }) {
 
@@ -31,7 +35,7 @@ export default function Index({ }) {
         <>
             <div className={styles.container}>
                 <div className={styles.navbar}>
-                    <Image className="" src='/logo.gif' width={60} height={60} />
+                    <Image className={styles.logo} src='/logo.gif' width={60} height={60} />
                     <div className={styles.links}>
                         <span>ABOUT</span>
                         <span>WORK</span>
@@ -61,10 +65,10 @@ export default function Index({ }) {
                     </div>
                     <div className={styles.options}>
                         <div className={styles.icons}>
-                            <span>IG</span>
-                            <span>YT</span>
-                            <span>LN</span>
-                            <span>GH</span>
+                            <span><InstagramIcon style={{fontSize: "1.5rem"}} /></span>
+                            <span><GitHubIcon style={{fontSize: "1.5rem"}} /></span>
+                            <span><LinkedInIcon style={{fontSize: "1.5rem"}} /></span>
+                            <span><TwitterIcon style={{fontSize: "1.5rem"}} /></span>
                         </div>
                         <div className={styles.sound}>
                             SOUND ON
@@ -72,7 +76,7 @@ export default function Index({ }) {
                     </div>
                 </div>
             </div>
-                {/* <motion.div className={`${styles.container} mask`}
+            {/* <motion.div className={`${styles.container} mask`}
              animate={{
                                  // WebkitMaskPosition: `${x}px ${y}px`,
                                  WebkitMaskPosition: `${x - (size / 2)}px ${y - (size / 2)}px`,
@@ -122,10 +126,10 @@ export default function Index({ }) {
                 </div>
             </motion.div> */}
 
-                <video autoPlay loop muted className={styles.backgroundVideo}>
+            <video autoPlay loop muted className={styles.backgroundVideo}>
                 <source src="https://minhpham.design/assets/video/hero.mp4" type='video/mp4' />
             </video>
-            </>
-            )
+        </>
+    )
 }
 

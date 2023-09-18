@@ -29,14 +29,11 @@ export default function Index({ }) {
                         <h3 className="headerText">Connect</h3>
                         <div className={styles.infoWrapper}>
                             <div className={styles.infoGrid}>
-                                <div className={styles.infoItem}>Dribble</div>
-                                <div className={styles.infoItem}>Instagram</div>
-
-                                <div className={styles.infoItem}>Twitter</div>
-                                <div className={styles.infoItem}>Github</div>
-
-                                <div className={styles.infoItem}>LinkedIn</div>
-                                <div className={styles.infoItem}>Mail</div>
+                                {[
+                                    "Resume", "Instagram", "Twitter", "Github", "LinkedIn", 
+                                ].map((link, index) => {
+                                    <div className={styles.infoItem} key={index}>{link}</div>
+                                })}
                             </div>
                             <div className={styles.infoDetails}>
                                 <div>

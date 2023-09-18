@@ -26,6 +26,10 @@
             padding: var(--pageMobilePadding);
         }
 
+        .logo{
+            border-radius: 50%;
+        }
+
         .links {
             display: flex;
             flex-direction: column;
@@ -87,7 +91,7 @@
         .icons {
             display: flex;
             align-items: center;
-            gap: 3rem;
+            gap: 4rem;
             transform: rotate(-90deg);
             transform-origin: left;
             cursor: pointer;
