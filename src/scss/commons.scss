@@ -1,3 +1,6 @@
+@import "./mixins";
+
+
 .alternate {
     color: var(--alternateText);
 }
@@ -7,6 +10,10 @@
     letter-spacing: .5em;
     line-height: 130%;
     text-transform: uppercase;
+
+    @include respond(phone) {
+        font-size: var(--headerMobileTextSize);
+    }
 }
 
 .mask{
@@ -14,11 +21,16 @@
     mask-repeat: no-repeat;
     // mask-size: 40px;
     background: var(--alternateText);
-    // position: absolute;
+    // opacity: .95;
+    position: absolute;
     // z-index: -1;
     color: black;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
+    @include respond(tab-port) {
+       opacity: 0;
+    }
   }

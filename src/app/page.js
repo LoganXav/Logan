@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
 import Preloader from '../components/Preloader';
 import Landing from '../components/Landing';
+import About from '../components/About';
+import Work from '../components/Work';
+import Contact from '../components/Contact';
 
 
 
@@ -35,7 +38,12 @@ export default function Home() {
           {isLoading && <Preloader setIsLoading={setIsLoading} />}
         </AnimatePresence>
         {!isLoading && (
+          <>
           <Landing />
+          <About />
+          <Work />
+          <Contact />
+          </>
         )
         }
     </main>

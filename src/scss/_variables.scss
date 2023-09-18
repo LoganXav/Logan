@@ -2,6 +2,8 @@
 
     // COLOR
     --primaryText: #b7ab98;
+    --secondaryText: #2a2824;
+
     --alternateText: #eb5939;
     --primaryBg: #0d0d0d;
 
@@ -9,12 +11,36 @@
     // PADDING
     --pagePadding: 0 7rem;
     --pageMobilePadding: 0 3rem;
-
+    --bodyPadding: 0 12rem;
+    --bodyMobilePadding: 0 3rem;
+    
+    // MARGIN
+    --bodymarginLeft: 12%;
+    --bodyMobileMarginLeft: 2.9rem;
+    
 
     // FONT SIZE
-    --headerTextSize: 1.275rem;
+    --headerTextSize: 1.5rem;
+    --headerMobileTextSize: 2rem;
+
+
     --navTextSize: 1.5rem;
-    --bannerTextSize: 12.275rem;
+
+    --bannerTextSize: 6.275rem;
+
+
+    --servicesTextSize: 6rem;
+    --servicesMobileTextSize: 5.8rem;
+
+
+    --historyTextSize: 1.8rem;
+    --historyMobileTextSize: 1.6rem;
+
+    --bodyMdTextSize: 7.5rem;
+    --bodyMobileMdTextSize: 6.2rem;
+
+    --bodyMdFontWeight: 700;
+
 
 
     // --secondary-shadow: rgba(2, 12, 27, 0.7);
