@@ -19,7 +19,7 @@ export default function Index({ }) {
                                 </div>
                             </h1>
                         </div>
-                        <h3 className={`${styles.name} headerText`}>Sogbesan Segun</h3>
+                        <h3 className="headerText">Sogbesan Segun</h3>
                     </div>
                 </div>
             </main>

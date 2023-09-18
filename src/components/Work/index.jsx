@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import styles from './style.module.scss';
 
 export default function Index({ }) {
@@ -15,7 +14,6 @@ export default function Index({ }) {
                     </div>
 
                 </div>
-                {/* <Image src="https://minhpham.design/assets/images/work-50.jpg" className={styles.backgroundImage} layout='fill' objectFit='cover' /> */}
             </main>
             <main className={styles.main}>
                 <div className={styles.historyBody}>
