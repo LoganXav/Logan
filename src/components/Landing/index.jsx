@@ -35,7 +35,7 @@ export default function Index({ }) {
         <>
             <div className={styles.container}>
                 <div className={styles.navbar}>
-                    <Image className={styles.logo} src='/logo.gif' width={60} height={60} />
+                    <Image className={styles.logo} src='/logo.gif' alt='navbarLogo' width={60} height={60} />
                     <div className={styles.links}>
                         <span>ABOUT</span>
                         <span>WORK</span>

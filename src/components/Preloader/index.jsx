@@ -42,7 +42,7 @@ export default function Index({ setIsLoading }) {
                 <>
                     
                     <motion.div variants={fadeIn} initial="initial" animate="enter" className={styles.start}>
-                        <Image className={styles.img} src='/logo.gif' width={70} height={70} />
+                        <Image className={styles.img} src='/logo.gif' alt='preloaderLogo' width={70} height={70} />
                         <button onClick={() => setIsLoading(false)} className={styles.button}><motion.p variants={opacity} initial="initial" animate="enter">{words[index]}</motion.p></button>
                     </motion.div>
                     <svg>
