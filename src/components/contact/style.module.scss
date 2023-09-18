@@ -2,11 +2,10 @@
 
 
 .main {
-    height: 100vh;
 
     .mottoBody {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,7 +15,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        
+
         .mottoContainer {
             display: flex;
             flex-direction: column;
@@ -24,11 +23,86 @@
             gap: 4rem;
             text-align: center;
 
-            .wrapper {
+            .mottoWrapper {
                 font-size: var(--bannerTextSize);
                 line-height: 165%;
                 letter-spacing: -0.15em;
                 text-transform: uppercase;
+
+                @include respond(tab-land) {
+                    font-size: var(--bannerTabletTextSize);
+                }
+                @include respond(tab-port) {
+                    font-size: var(--bannerMobileTextSize);
+                }
+            }
+        }
+    }
+
+    .infoBody {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .infoContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4rem;
+            padding-left: var(--bodymarginLeft);
+            padding-right: var(--bodymarginLeft);
+
+            @include respond(phone) {
+                padding-left: var(--bodyMobileMarginLeft);
+                padding-right: var(--bodyMobileMarginLeft);
+            }
+
+            .infoWrapper {
+                display: flex;
+                gap: 2rem;
+
+                @include respond(tab-port) {
+                    flex-direction: column;
+                    gap: 8rem;
+                }
+
+                .infoGrid {
+                    display: grid;
+                    flex: 4;
+                    font-weight: 700;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    line-height: 4.3rem;
+
+                    @include respond(phone) {
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(6, 1fr);
+                    }
+
+                    .infoItem {
+                        font-size: 3.7rem;
+                    }
+                }
+
+                .infoDetails {
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 3rem;
+
+                    p {
+                        font-size: large;
+                        font-weight: bold;
+                    }
+
+                    span {
+                        font-size: medium;
+                    }
+
+                }
             }
         }
     }

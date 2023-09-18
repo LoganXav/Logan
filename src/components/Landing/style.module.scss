@@ -22,7 +22,7 @@
         top: 0;
         left: 0;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             padding: var(--pageMobilePadding);
         }
 
@@ -53,6 +53,13 @@
             line-height: 165%;
             letter-spacing: -0.15em;
             text-transform: uppercase;
+
+            @include respond(tab-land) {
+                font-size: var(--bannerTabletTextSize);
+            }
+            @include respond(tab-port) {
+                font-size: var(--bannerMobileTextSize);
+            }
             .line{
                 overflow: hidden;
             }
@@ -73,7 +80,7 @@
         bottom: 0;
         left: 0;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             padding: var(--pageMobilePadding);
         }
 

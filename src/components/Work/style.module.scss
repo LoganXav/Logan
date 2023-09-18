@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: #afa18f;
+        color: var(--primaryText);
         cursor: default;
         position: relative;
         background-image: url('https://minhpham.design/assets/images/work-1600.jpg');
@@ -47,6 +47,11 @@
                 letter-spacing: -.07em;
                 font-weight: var(--bodyMdFontWeight);
                 font-size: var(--bodyMdTextSize);
+                
+                @include respond(tab-land) {
+                    max-width: 700px;
+                    font-size: var(--bodyTabletMdTextSize);
+                }
 
                 @include respond(tab-port) {
                     font-size: var(--bodyMobileMdTextSize);
@@ -91,7 +96,7 @@
                         @include respond(tab-port) {
                             padding-left: var(--bodyMobileMarginLeft);
                             margin-left: 0;
-                            gap: 6rem;
+                            gap: 5rem;
                         }
 
                         .role {
@@ -99,8 +104,6 @@
                             margin-top: 1rem;
                             letter-spacing: 0em;
                             font-weight: lighter;
-
-
                         }
                     }
                 }
@@ -144,6 +147,11 @@
                 font-weight: var(--bodyMdFontWeight);
                 font-size: var(--bodyMdTextSize);
 
+                @include respond(tab-land) {
+                    max-width: 700px;
+                    font-size: var(--bodyTabletMdTextSize);
+                }
+
                 @include respond(tab-port) {
                     font-size: var(--bodyMobileMdTextSize);
                 }
@@ -154,6 +162,10 @@
             display: flex;
             flex-direction: column;
             gap: 4rem;
+            background-image: url('https://minhpham.design/assets/images/planet-1-1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
 
             h3 {
                 margin-left: var(--bodymarginLeft);
@@ -168,6 +180,13 @@
                 line-height: 165%;
                 letter-spacing: -0.15em;
                 text-transform: uppercase;
+
+                @include respond(tab-land) {
+                    font-size: var(--bannerTabletTextSize);
+                }
+                @include respond(tab-port) {
+                    font-size: var(--bannerMobileTextSize);
+                }
 
                 h1 {
                     border-bottom: 1px solid var(--secondaryText) !important;

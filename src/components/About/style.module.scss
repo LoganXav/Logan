@@ -18,12 +18,12 @@
             flex-direction: column;
             gap: 2rem;
             padding-left: var(--bodymarginLeft);
-            
+
             @include respond(tab-port) {
-                max-width: 700px;
                 padding-right: var(--bodyMobileMarginLeft);
                 padding-left: var(--bodyMobileMarginLeft);
             }
+
             @include respond(phone) {
                 max-width: 400px;
             }
@@ -33,6 +33,11 @@
                 letter-spacing: -.07em;
                 font-weight: var(--bodyMdFontWeight);
                 font-size: var(--bodyMdTextSize);
+
+                @include respond(tab-land) {
+                    max-width: 700px;
+                    font-size: var(--bodyTabletMdTextSize);
+                }
 
                 @include respond(tab-port) {
                     font-size: var(--bodyMobileMdTextSize);
@@ -49,6 +54,7 @@
         flex-direction: column;
         color: var(--primaryText);
         cursor: default;
+
         @include respond(tab-port) {
             justify-content: start;
             height: 75vh;
@@ -73,8 +79,12 @@
                 letter-spacing: -0.15em;
                 text-transform: uppercase;
 
+                @include respond(tab-land) {
+                    font-size: var(--bannerTabletTextSize);
+                }
+
                 @include respond(tab-port) {
-                    font-size: var(--servicesMobileTextSize);
+                    font-size: var(--bannerMobileTextSize);
                 }
 
                 h1 {
