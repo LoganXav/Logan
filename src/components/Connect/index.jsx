@@ -30,10 +30,17 @@ export default function Index() {
                         <div className={styles.infoWrapper}>
                             <div className={styles.infoGrid}>
                                 {[
-                                    "Resume", "Instagram", "Twitter", "Github", "LinkedIn", 
-                                ].map((link, index) => {
-                                    <div className={styles.infoItem} key={index}>{link}</div>
-                                })}
+                                    { link: "Resume" },
+                                    { link: "Instagram" },
+                                    { link: "Twitter" },
+                                    { link: "Github" },
+                                    { link: "LinkedIn" },
+                                    { link: "Mail" },
+                                ].map(({ link }, index) => (
+                                    <h3 className={styles.infoItem} key={index}>
+                                        {link}
+                                    </h3>
+                                ))}
                             </div>
                             <div className={styles.infoDetails}>
                                 <div>

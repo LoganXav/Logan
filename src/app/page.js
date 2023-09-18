@@ -6,7 +6,7 @@ import Preloader from '../components/Preloader';
 import Landing from '../components/Landing';
 import About from '../components/About';
 import Work from '../components/Work';
-import Contact from '../components/Contact';
+import Connect from '../components/Connect';
 
 
 
@@ -42,7 +42,7 @@ export default function Home() {
           <Landing />
           <About />
           <Work />
-          <Contact />
+          <Connect />
           </>
         )
         }
