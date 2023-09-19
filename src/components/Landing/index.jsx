@@ -133,19 +133,6 @@ export default function Index({ }) {
             <video autoPlay loop muted className={styles.backgroundVideo}>
                 <source src="https://minhpham.design/assets/video/hero.mp4" type='video/mp4' />
             </video>
-
-
-
-            <div>
-
-            </div>
-
-            <input />
-
-
-
-
-
         </>
     )
 }
