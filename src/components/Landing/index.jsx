@@ -35,8 +35,8 @@ export default function Index({ }) {
         <>
             <div className={styles.container}>
                 <div className={styles.mobileShadeContainer}>
-                <div className={styles.mobileShade}></div>
-                <div className={styles.mobileShade}></div>
+                    <div className={styles.mobileShade}></div>
+                    <div className={styles.mobileShade}></div>
                 </div>
                 <div className={styles.navbar}>
                     <Image className={styles.logo} src='/logo.gif' alt='navbarLogo' width={60} height={60} />
@@ -69,10 +69,10 @@ export default function Index({ }) {
                     </div>
                     <div className={styles.options}>
                         <div className={styles.icons}>
-                            <span><InstagramIcon style={{fontSize: "2rem"}} /></span>
-                            <span><GitHubIcon style={{fontSize: "2rem"}} /></span>
-                            <span><LinkedInIcon style={{fontSize: "2rem"}} /></span>
-                            <span><TwitterIcon style={{fontSize: "2rem"}} /></span>
+                            <span><InstagramIcon style={{ fontSize: "2rem" }} /></span>
+                            <span><GitHubIcon style={{ fontSize: "2rem" }} /></span>
+                            <span><LinkedInIcon style={{ fontSize: "2rem" }} /></span>
+                            <span><TwitterIcon style={{ fontSize: "2rem" }} /></span>
                         </div>
                         <div className={styles.sound}>
                             SOUND ON
@@ -133,6 +133,19 @@ export default function Index({ }) {
             <video autoPlay loop muted className={styles.backgroundVideo}>
                 <source src="https://minhpham.design/assets/video/hero.mp4" type='video/mp4' />
             </video>
+
+
+
+            <div>
+
+            </div>
+
+            <input />
+
+
+
+
+
         </>
     )
 }
