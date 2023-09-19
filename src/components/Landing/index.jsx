@@ -34,6 +34,10 @@ export default function Index({ }) {
     return (
         <>
             <div className={styles.container}>
+                <div className={styles.mobileShadeContainer}>
+                <div className={styles.mobileShade}></div>
+                <div className={styles.mobileShade}></div>
+                </div>
                 <div className={styles.navbar}>
                     <Image className={styles.logo} src='/logo.gif' alt='navbarLogo' width={60} height={60} />
                     <div className={styles.links}>

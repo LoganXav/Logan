@@ -26,7 +26,7 @@
             padding: var(--pageMobilePadding);
         }
 
-        .logo{
+        .logo {
             border-radius: 50%;
         }
 
@@ -37,11 +37,11 @@
             gap: 5px;
             font-size: var(--navTextSize);
             font-weight: bold;
-            
+
             @include respond(tab-port) {
                 font-size: var(--navMobileTextSize);
             }
-    
+
         }
     }
 
@@ -66,10 +66,12 @@
             @include respond(tab-land) {
                 font-size: var(--bannerTabletTextSize);
             }
+
             @include respond(tab-port) {
                 font-size: var(--bannerMobileTextSize);
             }
-            .line{
+
+            .line {
                 overflow: hidden;
             }
         }
@@ -100,12 +102,12 @@
             transform: rotate(-90deg);
             transform-origin: left;
             cursor: pointer;
-            
+
             @include respond(phone) {
                 opacity: 0;
             }
-            
-            span{
+
+            span {
                 transform: rotate(90deg);
             }
         }
@@ -118,6 +120,28 @@
 
         }
 
+    }
+
+    .mobileShadeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        .mobileShade {
+            background-color: #0d0d0d;
+            box-shadow: 0px 19px 52px 47px rgba(0,0,0,0.9);
+-webkit-box-shadow: 0px 19px 52px 47px rgba(0,0,0,0.9);
+-moz-box-shadow: 0px 19px 52px 47px rgba(0,0,0,0.9);
+            width: 100%;
+            height: 1px;
+            z-index: 150;
+        }
     }
 }
 
