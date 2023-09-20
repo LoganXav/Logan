@@ -142,11 +142,12 @@
 
         .mobileShade {
             background-color: #0d0d0d;
-            box-shadow: 0px 0px 76px 68px rgba(0,0,0,0.77);
-            -webkit-box-shadow: 0px 0px 76px 68px rgba(0,0,0,0.77);
-            -moz-box-shadow: 0px 0px 76px 68px rgba(0,0,0,0.77);
+            box-shadow: 0px 0px 46px 88px rgba(13,13,13,1);
+            -webkit-box-shadow: 0px 0px 46px 88px rgba(13,13,13,1);
+            -moz-box-shadow: 0px 0px 46px 88px rgba(13,13,13,1);
             width: 100%;
-            height: 1px;
+            // opacity: 0.9;
+            // height: 3vh;
         }
     }
 }
