@@ -63,7 +63,7 @@ export default function Index({ }) {
                                 <div className='text'>Since</div>
                             </div>
                             <div className={`${styles.line} line`}>
-                                <div className='text'>2009</div>
+                                <div className='text'>2019</div>
                             </div>
                         </h1>
                     </div>

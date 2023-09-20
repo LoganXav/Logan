@@ -9,30 +9,30 @@ export default function Index({ }) {
             <div className={styles.aboutBody}>
                 <div className={styles.aboutContainer}>
                     <h3 className="headerText">About Me</h3>
-                    <p>I'm a <span className="alternate">selectively skilled</span> product designer with strong focus on producing high quality & impactful digital experience.</p>
+                    <p>I'm a selectively skilled<span className="alternate"> web developer</span> with a strong focus on producing high quality & impactful digital experiences.</p>
                 </div>
             </div>
         </main>
         <main className={styles.main}>
             <div className={styles.servicesBody}>
                 <div className={styles.servicesContainer}>
-                    <h3 className="headerText">What I Do</h3>
+                    <h3 className="headerText">What I Work With</h3>
                     <div className={styles.wrapper}>  
                         <h1 className={styles.services}>
                             <div className={`${styles.line} line`}>
-                                <div className='text'>3D</div>
+                                <div className='text'>Html</div>
                             </div>
                             <div className={`${styles.line} line`}>
-                                <div className='text'>VISUAL</div>
+                                <div className='text'>ReactJs</div>
                             </div>
                             <div className={`${styles.line} line`}>
-                                <div className='text'>MOTION</div>
+                                <div className='text'>NodeJs</div>
                             </div>
                             <div className={`${styles.line} line`}>
-                                <div className='text'>PRODUCT</div>
+                                <div className='text'>Tailwind</div>
                             </div>
                             <div className={`${styles.line} line`}>
-                                <div className='text'>TUTORIAL</div>
+                                <div className='text'>Mongo db</div>
                             </div>
                         </h1>
                     </div>

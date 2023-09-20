@@ -10,7 +10,7 @@ export default function Index({ }) {
                 <div className={styles.experienceBody}>
                     <div className={styles.experienceContainer}>
                         <h3 className="headerText">Experience</h3>
-                        <p>Over <span className="alternate">a decade</span> as a product designer with strong focus on producing high quality & impactful digital experience.</p>
+                        <p>With <span className="alternate">years of collaborative experience</span> in cross-functional teams, delivering digital products built to the highest industry standards.</p>
                         <h3 className={`${styles.history} headerText`}>History</h3>
                     </div>
 
@@ -58,7 +58,7 @@ export default function Index({ }) {
                 <div className={styles.projectsBody}>
                     <div className={styles.projectsContainer}>
                         <h3 className="headerText">Projects</h3>
-                        <p>Over <span>innovative</span> as a product designer with strong focus on producing high quality.</p>
+                        <p>Explore my portfolio of<span className="alternate"> past projects</span> where I've brought ideas to life and delivered exceptional digital solutions that make a difference.</p>
                     </div>
                 </div>
             </main>
