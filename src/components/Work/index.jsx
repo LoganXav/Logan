@@ -74,16 +74,16 @@ export default function Index({ }) {
                                     <div className='text'>Steex</div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Nexus</div>
+                                    <div className='text'>Logan</div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Wild Book</div>
+                                    <div className='text'>Nexus</div>
                                 </div>
                                 <div className={`${styles.line} line`}>
                                     <div className='text'>Cassie</div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Logan</div>
+                                    <div className='text'>Wild Book</div>
                                 </div>
                             </h1>
                             <div className={styles.balls}>
