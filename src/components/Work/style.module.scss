@@ -162,7 +162,7 @@
             display: flex;
             flex-direction: column;
             gap: 4rem;
-            background-image: url('https://minhpham.design/assets/images/planet-1-1.png');
+            // background-image: url('https://minhpham.design/assets/images/planet-1-1.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -180,12 +180,35 @@
                 line-height: 165%;
                 letter-spacing: -0.15em;
                 text-transform: uppercase;
+                position: relative;
 
                 @include respond(tab-land) {
                     font-size: var(--bannerTabletTextSize);
                 }
                 @include respond(tab-port) {
                     font-size: var(--bannerMobileTextSize);
+                }
+
+                .imgContainer{
+                    width: 100%;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: -5;
+                    top: -60%;
+                    right: 0;
+                    object-position: center;
+                    object-fit: contain;
+                    .img{
+                        width: 1000px;
+                        height: 1000px;
+                        
+                        @include respond(tab-land) {
+                            width: 600px;
+                            height: 600px;
+                        }
+                    }
                 }
 
                 h1 {

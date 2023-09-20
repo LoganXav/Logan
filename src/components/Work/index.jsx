@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import styles from './style.module.scss';
 
 export default function Index({ }) {
@@ -65,6 +66,9 @@ export default function Index({ }) {
                 <div className={styles.projectsBody}>
                     <div className={styles.projectsTitleContainer}>
                         <div className={styles.wrapper}>
+                            <div className={styles.imgContainer}>
+                                <Image className={styles.img} src='/planet.png' alt='planetImage' width={900} height={900} />
+                            </div>
                             <h1 className={styles.services}>
                                 <div className={`${styles.line} line`}>
                                     <div className='text'>Steex</div>
