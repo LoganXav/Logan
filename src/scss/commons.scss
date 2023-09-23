@@ -16,6 +16,11 @@
     }
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .mask{
     mask-image: url('../../public/mask.svg');
     mask-repeat: no-repeat;

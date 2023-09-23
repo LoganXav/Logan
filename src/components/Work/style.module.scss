@@ -187,6 +187,7 @@
                 letter-spacing: -0.15em;
                 text-transform: uppercase;
                 position: relative;
+                z-index: 999;
 
                 @include respond(tab-land) {
                     font-size: var(--bannerTabletTextSize);

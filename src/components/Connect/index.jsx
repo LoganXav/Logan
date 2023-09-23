@@ -30,17 +30,35 @@ export default function Index() {
                         <div className={styles.infoWrapper}>
                             <div className={styles.infoGrid}>
                                 {[
-                                    { link: "Resume" },
-                                    { link: "Instagram" },
-                                    { link: "Twitter" },
-                                    { link: "Github" },
-                                    { link: "LinkedIn" },
+                                    {
+                                        link: "Resume",
+                                        url: "https://instagram.com/ssegun__"
+                                    },
+                                    {
+                                        link: "Instagram",
+                                        url: "https://instagram.com/ssegun__"
+                                    },
+                                    {
+                                        link: "Twitter",
+                                        url: "https://twitter.com/Ssegun_"
+                                    },
+                                    {
+                                        link: "Github",
+                                        url: "https://instagram.com/ssegun__"
+                                    },
+                                    {
+                                        link: "LinkedIn",
+                                        url: "https://instagram.com/ssegun__"
+                                    },
                                     { link: "Mail" },
-                                ].map(({ link }, index) => (
+                                ].map(({ link, url }, index) => (
                                     <div className={styles.bullet}>
                                         <span className={styles.dot}></span>
                                         <h3 className={styles.infoItem} key={index}>
-                                            {link}
+                                            <a href={url}>
+
+                                                {link}
+                                            </a>
                                         </h3>
                                     </div>
                                 ))}

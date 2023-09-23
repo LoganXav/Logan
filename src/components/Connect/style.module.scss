@@ -67,6 +67,8 @@
             .infoWrapper {
                 display: flex;
                 gap: 2rem;
+                position: relative;
+                z-index: 999;
 
                 @include respond(tab-port) {
                     flex-direction: column;
