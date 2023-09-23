@@ -70,20 +70,20 @@ export default function Index({ }) {
                                 <Image className={styles.img} src='/planet.png' alt='planetImage' width={900} height={900} />
                             </div>
                             <h1 className={styles.services}>
-                                <div className={`${styles.line} line`}>
-                                    <div className='text'>Steex</div>
+                                <div className={`${styles.line} line`}> 
+                                    <div className='text'><a href="https://steex.vercel.app/">Steex</a></div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Logan</div>
+                                    <div className='text'><a href="https://logan-bay.vercel.app/">Logan</a></div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Nexus</div>
+                                    <div className='text'><a href="">Nexus</a></div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Cassie</div>
+                                    <div className='text'><a href="https://cassie.vercel.app/">Cassie</a></div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Wild Book</div>
+                                    <div className='text'><a href="https://wild-book.vercel.app/">Wild Book</a></div>
                                 </div>
                             </h1>
                             <div className={styles.balls}>
