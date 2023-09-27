@@ -1,12 +1,15 @@
 'use client';
 import Image from 'next/image';
 import styles from './style.module.scss';
+import { useRef } from 'react';
 
 export default function Index({ }) {
 
+    const divRef = useRef(null);
+
     return (
         <>
-            <main className={styles.main}>
+            <main className={styles.main} id="work" ref={divRef}>
                 <div className={styles.experienceBody}>
                     <div className={styles.experienceContainer}>
                         <h3 className="headerText">Experience</h3>
@@ -40,13 +43,6 @@ export default function Index({ }) {
                                     <div className='text'>
                                         <p>Software Engineer</p>
                                         <p className={styles.role}>Consol Limited</p>
-                                    </div>
-                                </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className='text'>2019</div>
-                                    <div className='text'>
-                                        <p>Baby Engineer</p>
-                                        <p className={styles.role}>Home</p>
                                     </div>
                                 </div>
                             </h1>

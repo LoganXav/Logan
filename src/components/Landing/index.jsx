@@ -1,7 +1,8 @@
 'use client';
 import styles from './style.module.scss';
 import Image from 'next/image';
-import { useState, useEffect } from 'react'
+import Link from 'next/link';
+import { useState, useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { motion } from 'framer-motion';
 import useMousePosition from '../../utils/useMousePosition';
@@ -31,19 +32,36 @@ export default function Index({ }) {
         })
     }, [])
 
+    const divRef = useRef(null);
+    function scrollToSection(sectionId) {
+        // const section = document.getElementById(sectionId);
+        // if (section) {
+        //     section.scrollIntoView({ behavior: 'smooth' });
+        // }
+       
+        
+        
+        useEffect(() => {
+        if (divRef.current) {
+            divRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [sectionId]);
+    }
+
+
     return (
         <>
             <div className={styles.container}>
                 <div className={styles.mobileShadeContainer}>
-                    <div className={styles.mobileShade}></div>
-                    <div className={styles.mobileShade}></div>
+                    <div className={styles.mobileShadeTop}></div>
+                    <div className={styles.mobileShadeBottom}></div>
                 </div>
                 <div className={styles.navbar}>
                     <Image className={styles.logo} src='/logo.gif' alt='navbarLogo' width={60} height={60} />
                     <div className={styles.links}>
-                        <span>ABOUT</span>
-                        <span>WORK</span>
-                        <span>CONTACT</span>
+                        <Link href="#about" onClick={() => scrollToSection('about')}>ABOUT</Link>
+                        <Link href="#work" onClick={() => scrollToSection('work')}>WORK</Link>
+                        <Link href="#connect" onClick={() => scrollToSection('connect')}>CONTACT</Link>
                     </div>
                 </div>
                 <div className={styles.banner}>
@@ -51,13 +69,13 @@ export default function Index({ }) {
                     <div className={styles.wrapper}>
                         <h1>
                             <div className={`${styles.line} line`}>
-                                <div className='text'>Making</div>
+                                <div className='text'>Writing</div>
                             </div>
                             <div className={`${styles.line} line`}>
-                                <div className='alternate text'>Good</div>
+                                <div className='alternate text'>Clean</div>
                             </div>
                             <div className={`${styles.line} line`}>
-                                <div className='alternate text'>Shit</div>
+                                <div className='alternate text'>Code</div>
                             </div>
                             <div className={`${styles.line} line`}>
                                 <div className='text'>Since</div>
@@ -74,8 +92,8 @@ export default function Index({ }) {
                             <span><a href="https://ng.linkedin.com/in/logan10927_"></a><LinkedInIcon style={{ fontSize: "2rem" }} /></span>
                             <span><a href="https://twitter.com/Ssegun_"></a><TwitterIcon style={{ fontSize: "2rem" }} /></span>
                         </div>
-                        <div className={styles.sound}>
-                            SOUND ON
+                        <div className={styles.resume}>
+                            RESUME
                         </div>
                     </div>
                 </div>
@@ -132,8 +150,9 @@ export default function Index({ }) {
 
             <video autoPlay loop muted className={styles.backgroundVideo}>
                 <source src="https://minhpham.design/assets/video/hero.mp4" type='video/mp4' />
-            </video>
+            </video> 
         </>
     )
 }
+
 

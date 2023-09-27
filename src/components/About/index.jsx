@@ -1,11 +1,12 @@
 'use client';
 import styles from './style.module.scss';
+import {scrollToSection} from "../Landing"
 
 export default function Index({ }) {
 
     return (
         <>
-        <main className={styles.main}>
+        <main className={styles.main} id="about">
             <div className={styles.aboutBody}>
                 <div className={styles.aboutContainer}>
                     <h3 className="headerText">About Me</h3>

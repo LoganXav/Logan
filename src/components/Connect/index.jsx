@@ -5,28 +5,28 @@ export default function Index() {
 
     return (
         <>
-            <main className={styles.main}>
+            <main className={styles.main} id="connect">
                 <div className={styles.mottoBody}>
                     <div className={styles.mottoContainer}>
                         <h3 className="headerText">My Motto</h3>
                         <div className={styles.mottoWrapper}>
                             <h1>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>Good Design</div>
+                                    <div className='text'>Web Developer</div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>is Honest</div>
+                                    <div className='text'>Coffee Consumer.</div>
                                 </div>
                             </h1>
                         </div>
-                        <h3 className="headerText">Sogbesan Segun</h3>
+                        <h3 className="headerText">Joe Sparano</h3>
                     </div>
                 </div>
             </main>
             <main className={styles.main}>
                 <div className={styles.infoBody}>
                     <div className={styles.infoContainer}>
-                        <h3 className="headerText">Connect</h3>
+                        <h3 className="headerText">Connect with me:</h3>
                         <div className={styles.infoWrapper}>
                             <div className={styles.infoGrid}>
                                 {[

@@ -10,11 +10,10 @@
         flex-direction: column;
         justify-content: center;
         gap: 4rem;
-        background-image: url('https://minhpham.design/assets/images/banner-bottom-2400.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        // background-image: url('https://minhpham.design/assets/images/banner-bottom-2400.jpg');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
 
         .mottoContainer {
             display: flex;
@@ -68,7 +67,7 @@
                 display: flex;
                 gap: 2rem;
                 position: relative;
-                z-index: 999;
+                z-index: 900;
 
                 @include respond(tab-port) {
                     flex-direction: column;
