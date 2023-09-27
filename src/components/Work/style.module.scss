@@ -239,11 +239,12 @@
                             display: flex;
                             flex-direction: column;
                             // align-items: flex-end;
-                            gap: 2rem;
+                            gap: 1rem;
 
                             .details {
                                 display: flex;
-                                gap: 2rem;
+                                gap: 5rem;
+                                font-weight: 400;
 
                                 .stack {
                                     line-height: normal;
@@ -264,6 +265,12 @@
                                     letter-spacing: normal;
                                     text-decoration: underline;
                                     text-transform: none;
+
+                                    a {
+                                        &:hover {
+                                            color: var(--alternateText);
+                                        }
+                                    }
                                 }
                             }
                         }
