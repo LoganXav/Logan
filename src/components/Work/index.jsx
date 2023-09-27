@@ -66,20 +66,61 @@ export default function Index({ }) {
                                 <Image className={styles.img} src='/planet.png' alt='planetImage' width={900} height={900} />
                             </div>
                             <h1 className={styles.services}>
-                                <div className={`${styles.line} line`}> 
-                                    <div className='text'><a href="https://steex.vercel.app/">Steex</a></div>
+                                <div className={`${styles.line} line`}>
+                                    <div className={styles.text}>
+                                        <div>Steex</div>
+                                        <span className={styles.stack}>
+                                            React, MUI, Express
+                                        </span>
+                                        <span className={styles.redirects}>
+                                            <a href="#">Github</a>
+                                            <a href="https://steex.vercel.app/">Website</a>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'><a href="https://logan-bay.vercel.app/">Logan</a></div>
+                                    <div className={styles.text}>
+                                        <div>Logan</div>
+                                        <span className={styles.stack}>
+                                            Next, Scss, Gsap
+                                        </span>
+                                    </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'><a href="">Nexus</a></div>
+                                    <div className={styles.text}>
+                                        <div>Nexus</div>
+                                        <span className={styles.stack}>
+                                            React, Strapi, Stripe
+                                        </span>
+                                        <span className={styles.redirects}>
+                                            <a href="#">Github</a>
+                                            <a href="https://nexus-emart.vercel.app/">Website</a>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'><a href="https://cassie.vercel.app/">Cassie</a></div>
+                                    <div className={styles.text}>
+                                        <div>Cassie</div>
+                                        <span className={styles.stack}>
+                                            React, Scss, Framer motion
+                                        </span>
+                                        <span className={styles.redirects}>
+                                            <a href="#">Github</a>
+                                            <a href="https://cassie.vercel.app/">Website</a>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'><a href="https://wild-book.vercel.app/">Wild Book</a></div>
+                                    <div className={styles.text}>
+                                        <div>Wild Book</div>
+                                        <span className={styles.stack}>
+                                            React, Express, Stripe
+                                        </span>
+                                        <span className={styles.redirects}>
+                                            <a href="#">Github</a>
+                                            <a href="https://wild-book.vercel.app/">Website</a>
+                                        </span>
+                                    </div>
                                 </div>
                             </h1>
                             <div className={styles.balls}>
