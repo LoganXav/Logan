@@ -69,57 +69,67 @@ export default function Index({ }) {
                                 <div className={`${styles.line} line`}>
                                     <div className={styles.text}>
                                         <div>Steex</div>
-                                        <span className={styles.stack}>
-                                            React, MUI, Express
-                                        </span>
-                                        <span className={styles.redirects}>
-                                            <a href="#">Github</a>
-                                            <a href="https://steex.vercel.app/">Website</a>
-                                        </span>
+                                        <div className={styles.details}>
+                                            <span className={styles.stack}>
+                                                React, MUI, Express
+                                            </span>
+                                            <span className={styles.redirects}>
+                                                <a href="#">Github</a>
+                                                <a href="https://steex.vercel.app/">Website</a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
                                     <div className={styles.text}>
                                         <div>Logan</div>
-                                        <span className={styles.stack}>
-                                            Next, Scss, Gsap
-                                        </span>
+                                        <div className={styles.details}>
+                                            <span className={styles.stack}>
+                                                Next, Scss, Gsap
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
                                     <div className={styles.text}>
                                         <div>Nexus</div>
-                                        <span className={styles.stack}>
-                                            React, Strapi, Stripe
-                                        </span>
-                                        <span className={styles.redirects}>
-                                            <a href="#">Github</a>
-                                            <a href="https://nexus-emart.vercel.app/">Website</a>
-                                        </span>
+                                        <div className={styles.details}>
+                                            <span className={styles.stack}>
+                                                React, Strapi, Stripe
+                                            </span>
+                                            <span className={styles.redirects}>
+                                                <a href="#">Github</a>
+                                                <a href="https://nexus-emart.vercel.app/">Website</a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
                                     <div className={styles.text}>
                                         <div>Cassie</div>
-                                        <span className={styles.stack}>
-                                            React, Scss, Framer motion
-                                        </span>
-                                        <span className={styles.redirects}>
-                                            <a href="#">Github</a>
-                                            <a href="https://cassie.vercel.app/">Website</a>
-                                        </span>
+                                        <div className={styles.details}>
+                                            <span className={styles.stack}>
+                                                React, Scss, Framer motion
+                                            </span>
+                                            <span className={styles.redirects}>
+                                                <a href="#">Github</a>
+                                                <a href="https://cassie.vercel.app/">Website</a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={`${styles.line} line`}>
                                     <div className={styles.text}>
                                         <div>Wild Book</div>
-                                        <span className={styles.stack}>
-                                            React, Express, Stripe
-                                        </span>
-                                        <span className={styles.redirects}>
-                                            <a href="#">Github</a>
-                                            <a href="https://wild-book.vercel.app/">Website</a>
-                                        </span>
+                                        <div className={styles.details}>
+                                            <span className={styles.stack}>
+                                                React, Express, Stripe
+                                            </span>
+                                            <span className={styles.redirects}>
+                                                <a href="#">Github</a>
+                                                <a href="https://wild-book.vercel.app/">Website</a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </h1>

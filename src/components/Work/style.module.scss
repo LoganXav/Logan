@@ -206,7 +206,7 @@
                     justify-content: center;
                     align-items: center;
                     z-index: -5;
-                    top: -50%;
+                    top: -10%;
                     right: 0;
                     object-position: center;
                     object-fit: contain;
@@ -237,28 +237,34 @@
 
                         .text {
                             display: flex;
-                            gap: 5rem;
-                            align-items: flex-end;
+                            flex-direction: column;
+                            // align-items: flex-end;
+                            gap: 2rem;
 
-                            .stack {
-                                line-height: normal;
-                                font-size: 2rem !important;
+                            .details {
                                 display: flex;
-                                align-items: center;
                                 gap: 2rem;
-                                letter-spacing: normal;
-                                text-transform: none;
-                            }
 
-                            .redirects {
-                                line-height: normal;
-                                font-size: 2rem !important;
-                                display: flex;
-                                align-items: center;
-                                gap: 2rem;
-                                letter-spacing: normal;
-                                text-decoration: underline;
-                                text-transform: none;
+                                .stack {
+                                    line-height: normal;
+                                    font-size: 2rem !important;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2rem;
+                                    letter-spacing: normal;
+                                    text-transform: none;
+                                }
+
+                                .redirects {
+                                    line-height: normal;
+                                    font-size: 2rem !important;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2rem;
+                                    letter-spacing: normal;
+                                    text-decoration: underline;
+                                    text-transform: none;
+                                }
                             }
                         }
                     }

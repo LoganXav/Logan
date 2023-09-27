@@ -53,7 +53,7 @@
             letter-spacing: 4px;
             font-weight: 700;
             text-transform: uppercase;
-            
+
             @include respond(phone) {
                 height: 6.8rem;
                 transform: translateY(8rem);
