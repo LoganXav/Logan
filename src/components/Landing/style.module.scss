@@ -131,6 +131,10 @@
             transform: rotate(90deg);
             transform-origin: right;
             cursor: pointer;
+            @include respond(tab-port) {
+                font-size: var(--navMobileTextSize);
+                transform: none;
+            }
 
         }
 

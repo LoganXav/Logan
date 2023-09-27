@@ -93,7 +93,7 @@ export default function Index({ }) {
                             <span><a href="https://twitter.com/Ssegun_"></a><TwitterIcon style={{ fontSize: "2rem" }} /></span>
                         </div>
                         <div className={styles.resume}>
-                            RESUME
+                            DOWNLOAD RESUME
                         </div>
                     </div>
                 </div>

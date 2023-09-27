@@ -41,7 +41,7 @@ export default function Index({ setIsLoading }) {
 
 
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const initialValue = "Welcome";
+  const initialValue = "Proceed";
   const [text, setText] = useState(initialValue);
 
   const handleMouseOver = () => {
