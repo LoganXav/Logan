@@ -34,7 +34,7 @@ export default function Index() {
                                 {[
                                     {
                                         link: "Resume",
-                                        url: "https://instagram.com/ssegun__"
+                                        url: "/resume.pdf"
                                     },
                                     {
                                         link: "Instagram",
@@ -52,15 +52,21 @@ export default function Index() {
                                         link: "LinkedIn",
                                         url: "https://www.linked.com/in/logan10927"
                                     },
-                                    { link: "Mail" },
+                                    { 
+                                        link: "Mail",
+                                        url: "mailto:sogbesansegun22@gmail.com"
+                                    },
                                 ].map(({ link, url }, index) => (
                                     <div key={url} className={styles.bullet}>
                                         <span className={styles.dot}></span>
                                         <h3 className={styles.infoItem} key={index}>
-                                            <a href={url}>
-
-                                                {link}
-                                            </a>
+                                            {link === "Resume" ? (
+                                                <a href={url} download="Resume">
+                                                    {link}
+                                                </a>
+                                            ) : (
+                                                <a href={url}>{link}</a>
+                                            )}
                                         </h3>
                                     </div>
                                 ))}
