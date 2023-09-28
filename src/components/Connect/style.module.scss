@@ -48,6 +48,7 @@
 
     .infoBody {
         width: 100%;
+        position: relative;
         // height: 70vh;
         display: flex;
         flex-direction: column;
@@ -148,6 +149,18 @@
                     }
 
                 }
+            }
+        }
+        .credit{
+            position: absolute;
+            font-size: 1.5rem;
+            bottom: 5rem;
+            // left: 15rem;
+            margin-left: var(--bodymarginLeft);
+            
+            @include respond(phone) {
+                font-size: 2.3rem;
+                margin-left: var(--bodyMobileMarginLeft);
             }
         }
     }

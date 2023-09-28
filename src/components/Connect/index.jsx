@@ -84,6 +84,7 @@ export default function Index() {
                         </div>
 
                     </div>
+                <span className={styles.credit}>Credit: Minh Pham</span>
                 </div>
             </main>
         </>
