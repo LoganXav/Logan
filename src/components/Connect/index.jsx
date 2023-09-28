@@ -5,7 +5,7 @@ export default function Index() {
 
     return (
         <>
-            <main className={styles.main} id="connect">
+            <main  id="contact" className={styles.main}>
                 <div className={styles.mottoBody}>
                     <div className={styles.mottoContainer}>
                         <h3 className="headerText">Inspiration</h3>

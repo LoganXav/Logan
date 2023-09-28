@@ -5,11 +5,9 @@ import { useRef } from 'react';
 
 export default function Index({ }) {
 
-    const divRef = useRef(null);
-
     return (
         <>
-            <main className={styles.main} id="work" ref={divRef}>
+            <main className={styles.main} id="work">
                 <div className={styles.experienceBody}>
                     <div className={styles.experienceContainer}>
                         <h3 className="headerText">Experience</h3>

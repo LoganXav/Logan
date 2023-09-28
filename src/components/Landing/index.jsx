@@ -11,8 +11,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-// import resume from "/resume.pdf"
-
 export default function Index({ }) {
 
     const [isHovered, setIsHovered] = useState(false);
