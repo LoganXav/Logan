@@ -24,27 +24,31 @@ export default function Index({ }) {
                     <div className={styles.historyContainer}>
                         <div className={styles.wrapper}>
                             <h1 className={styles.services}>
+                                {[
+                                    {
+                                        time: "NOW",
+                                        role: "Frontend Engineer Intern",
+                                        company: "Simplify Technologies"
+                                    },
+                                    {
+                                        time: "2021",
+                                        role: "Information Systems Engineer Intern",
+                                        company: "Bank of Industry"
+                                    },
+                                    {
+                                        time: "2020",
+                                        role: "Software Engineer Intern",
+                                        company: "Consol Limited"
+                                    },
+                                ].map(({ time, role, company }) => (
                                 <div className={`${styles.line} line`}>
-                                    <div className='text'>NOW</div>
+                                    <div className='text'>{time}</div>
                                     <div className='text'>
-                                        <p>Frontend Engineer</p>
-                                        <p className={styles.role}>Simplify Technologies</p>
+                                        <p>{role}</p>
+                                        <p className={styles.role}>{company}</p>
                                     </div>
                                 </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className='text'>2021</div>
-                                    <div className='text'>
-                                        <p>Information Systems Engineer</p>
-                                        <p className={styles.role}>Bank of Industry</p>
-                                    </div>
-                                </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className='text'>2020</div>
-                                    <div className='text'>
-                                        <p>Software Engineer</p>
-                                        <p className={styles.role}>Consol Limited</p>
-                                    </div>
-                                </div>
+                                ))}
                             </h1>
                         </div>
                     </div>
@@ -66,72 +70,53 @@ export default function Index({ }) {
                                 <Image className={styles.img} src='/planet.png' alt='planetImage' width={900} height={900} />
                             </div>
                             <h1 className={styles.services}>
+                            {[
+                                    {
+                                        name: "Steex",
+                                        stack: "React, MUI, Express",
+                                        href1: "#",
+                                        href2: "https://steex.vercel.app/"
+                                    },
+                                    {
+                                        name: "Nexus",
+                                        stack: "React, Strapi, Stripe",
+                                        href1: "#",
+                                        href2: "https://nexus-emart.vercel.app/"
+                                    },
+                                    {
+                                        name: "Cassie",
+                                        stack: "  React, Scss, Framer motion",
+                                        href1: "#",
+                                        href2: "https://cassie.vercel.app/"
+                                    },
+                                    {
+                                        name: "Wild Book",
+                                        stack: "React, Express, Stripe",
+                                        href1: "#",
+                                        href2: "https://wild-book.vercel.app/"
+                                    },
+                                    {
+                                        name: "Logan",
+                                        stack: "React, MUI, Express",
+                                        href1: "#",
+                                        href2: "#"
+                                    },
+                                ].map(({ name, stack, href1, href2 }) => (
                                 <div className={`${styles.line} line`}>
                                     <div className={styles.text}>
-                                        <div>Steex</div>
+                                        <div>{name}</div>
                                         <div className={styles.details}>
                                             <span className={styles.stack}>
-                                                React, MUI, Express
+                                                {stack}
                                             </span>
                                             <span className={styles.redirects}>
-                                                <a href="#">Github</a>
-                                                <a href="https://steex.vercel.app/">Website</a>
+                                                <a href={href1}>{href1 ? "Github" : ""}</a>
+                                                <a href={href2}>Website</a>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className={styles.text}>
-                                        <div>Logan</div>
-                                        <div className={styles.details}>
-                                            <span className={styles.stack}>
-                                                Next, Scss, Gsap
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className={styles.text}>
-                                        <div>Nexus</div>
-                                        <div className={styles.details}>
-                                            <span className={styles.stack}>
-                                                React, Strapi, Stripe
-                                            </span>
-                                            <span className={styles.redirects}>
-                                                <a href="#">Github</a>
-                                                <a href="https://nexus-emart.vercel.app/">Website</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className={styles.text}>
-                                        <div>Cassie</div>
-                                        <div className={styles.details}>
-                                            <span className={styles.stack}>
-                                                React, Scss, Framer motion
-                                            </span>
-                                            <span className={styles.redirects}>
-                                                <a href="#">Github</a>
-                                                <a href="https://cassie.vercel.app/">Website</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className={styles.text}>
-                                        <div>Wild Book</div>
-                                        <div className={styles.details}>
-                                            <span className={styles.stack}>
-                                                React, Express, Stripe
-                                            </span>
-                                            <span className={styles.redirects}>
-                                                <a href="#">Github</a>
-                                                <a href="https://wild-book.vercel.app/">Website</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
                             </h1>
                             <div className={styles.balls}>
                                 <span className={styles.ball}></span>

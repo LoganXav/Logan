@@ -1,8 +1,9 @@
 @import "./variables";
 @import "./mixins";
 @import "./commons";
-@import url('https://fonts.googleapis.com/css2?family=Mali:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Mali:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;600;700&display=swap');
 
 *,
 *::after,
@@ -11,8 +12,9 @@
     padding: 0;
     box-sizing: border-box;
     // font-family: 'Mali';
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400 !important;
+    // font-family: 'Poppins', sans-serif;
+    font-family: 'Exo', sans-serif;
+    // font-weight: 400 !important;
 }
 
 html {

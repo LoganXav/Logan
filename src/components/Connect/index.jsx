@@ -11,12 +11,14 @@ export default function Index() {
                         <h3 className="headerText">Inspiration</h3>
                         <div className={styles.mottoWrapper}>
                             <h1>
-                                <div className={`${styles.line} line`}>
-                                    <div className='text'>Good Design</div>
-                                </div>
-                                <div className={`${styles.line} line`}>
-                                    <div className='text'>Is Honest.</div>
-                                </div>
+                                {[
+                                    "Good Design", "Is Honest."
+                                ].map((line) => (
+                                    <div className={`${styles.line} line`}>
+                                        <div className='text'>{line}</div>
+                                    </div>
+                                ))}
+
                             </h1>
                         </div>
                         <h3 className="headerText">Minh Pham</h3>

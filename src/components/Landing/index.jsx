@@ -38,14 +38,14 @@ export default function Index({ }) {
         // if (section) {
         //     section.scrollIntoView({ behavior: 'smooth' });
         // }
-       
-        
-        
+
+
+
         useEffect(() => {
-        if (divRef.current) {
-            divRef.current.scrollIntoView({ behavior: "smooth" });
-        }
-    }, [sectionId]);
+            if (divRef.current) {
+                divRef.current.scrollIntoView({ behavior: "smooth" });
+            }
+        }, [sectionId]);
     }
 
 
@@ -68,29 +68,57 @@ export default function Index({ }) {
                     <h3 className="headerText">SEGUN SOGBESAN</h3>
                     <div className={styles.wrapper}>
                         <h1>
-                            <div className={`${styles.line} line`}>
-                                <div className='text'>Writing</div>
-                            </div>
-                            <div className={`${styles.line} line`}>
-                                <div className='alternate text'>Clean</div>
-                            </div>
-                            <div className={`${styles.line} line`}>
-                                <div className='alternate text'>Code</div>
-                            </div>
-                            <div className={`${styles.line} line`}>
-                                <div className='text'>Since</div>
-                            </div>
-                            <div className={`${styles.line} line`}>
-                                <div className='text'>2021</div>
-                            </div>
+                            {[
+                                {
+                                    line: "Writing",
+                                    style: ""
+                                },
+                                {
+                                    line: "Clean",
+                                    style: "alternate"
+                                },
+                                {
+                                    line: "Code",
+                                    style: "alternate"
+                                },
+                                {
+                                    line: "Since",
+                                    style: ""
+                                },
+                                {
+                                    line: "2021",
+                                    style: ""
+                                },
+                            ].map(({ line, style }) => (
+                                <div className={`${styles.line} line`}>
+                                    <div className={`${style} text`}>{line}</div>
+                                </div>
+                            ))}
                         </h1>
                     </div>
                     <div className={styles.options}>
                         <div className={styles.icons}>
-                            <span><a href="https://instagram.com/ssegun__"></a><InstagramIcon style={{ fontSize: "2rem" }} /></span>
-                            <span><a href="https://github.com/LoganXav"></a><GitHubIcon style={{ fontSize: "2rem" }} /></span>
-                            <span><a href="https://ng.linkedin.com/in/logan10927_"></a><LinkedInIcon style={{ fontSize: "2rem" }} /></span>
-                            <span><a href="https://twitter.com/Ssegun_"></a><TwitterIcon style={{ fontSize: "2rem" }} /></span>
+                            {[
+                                {
+                                    href: "https://instagram.com/ssegun__",
+                                    component: <InstagramIcon style={{ fontSize: "2rem" }} />
+                                },
+                                {
+                                    href: "https://github.com/LoganXav",
+                                    component: <GitHubIcon style={{ fontSize: "2rem" }} />
+                                },
+                                {
+                                    href: "https://ng.linkedin.com/in/logan10927_",
+                                    component: <LinkedInIcon style={{ fontSize: "2rem" }} />
+                                },
+                                {
+                                    href: "https://twitter.com/Ssegun_",
+                                    component: <TwitterIcon style={{ fontSize: "2rem" }} />
+                                },
+                            ].map(({ href, component }) => (
+                                <span><a href={href}>{component}</a></span>
+
+                            ))}
                         </div>
                         <div className={styles.resume}>
                             DOWNLOAD RESUME
@@ -150,7 +178,7 @@ export default function Index({ }) {
 
             <video autoPlay loop muted className={styles.backgroundVideo}>
                 <source src="https://minhpham.design/assets/video/hero.mp4" type='video/mp4' />
-            </video> 
+            </video>
         </>
     )
 }
