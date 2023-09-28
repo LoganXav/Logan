@@ -9,7 +9,7 @@ import Work from '../components/Work';
 import Connect from '../components/Connect';
 import { Raleway } from '@next/font/google'
 
-const noto = Raleway({
+const raleway = Raleway({
   subsets: ['latin'],
 })
 
@@ -39,7 +39,7 @@ export default function Home() {
 
 
   return (
-    <main className={`${styles.main} ${noto.className}`}>
+    <main className={`${styles.main} ${raleway.className}`}>
         <AnimatePresence mode='wait'>
           {isLoading && <Preloader setIsLoading={setIsLoading} />}
         </AnimatePresence>

@@ -14,7 +14,7 @@ export default function Index() {
                                 {[
                                     "Good Design", "Is Honest."
                                 ].map((line) => (
-                                    <div className={`${styles.line} line`}>
+                                    <div key={line} className={`${styles.line} line`}>
                                         <div className='text'>{line}</div>
                                     </div>
                                 ))}
@@ -54,7 +54,7 @@ export default function Index() {
                                     },
                                     { link: "Mail" },
                                 ].map(({ link, url }, index) => (
-                                    <div className={styles.bullet}>
+                                    <div key={url} className={styles.bullet}>
                                         <span className={styles.dot}></span>
                                         <h3 className={styles.infoItem} key={index}>
                                             <a href={url}>

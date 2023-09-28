@@ -11,9 +11,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
+// import resume from "/resume.pdf"
+
 export default function Index({ }) {
 
     const [isHovered, setIsHovered] = useState(false);
+    const [isActive, setIsActive] = useState("about");
+
+
     const { x, y } = useMousePosition();
 
     const size = isHovered ? 300 : 30;
@@ -32,22 +37,6 @@ export default function Index({ }) {
         })
     }, [])
 
-    const divRef = useRef(null);
-    function scrollToSection(sectionId) {
-        // const section = document.getElementById(sectionId);
-        // if (section) {
-        //     section.scrollIntoView({ behavior: 'smooth' });
-        // }
-
-
-
-        useEffect(() => {
-            if (divRef.current) {
-                divRef.current.scrollIntoView({ behavior: "smooth" });
-            }
-        }, [sectionId]);
-    }
-
 
     return (
         <>
@@ -59,9 +48,22 @@ export default function Index({ }) {
                 <div className={styles.navbar}>
                     <Image className={styles.logo} src='/logo.gif' alt='navbarLogo' width={60} height={60} />
                     <div className={styles.links}>
-                        <Link href="#about" onClick={() => scrollToSection('about')}>ABOUT</Link>
-                        <Link href="#work" onClick={() => scrollToSection('work')}>WORK</Link>
-                        <Link href="#connect" onClick={() => scrollToSection('connect')}>CONTACT</Link>
+                        {[
+                            {
+                                name: "about",
+                                hash: "#about"
+                            },
+                            {
+                                name: "work",
+                                hash: "#work"
+                            },
+                            {
+                                name: "contact",
+                                hash: "#contact"
+                            },
+                        ].map(({ name, hash }) => (
+                            <Link key={name} className={`${isActive === name ? styles.activeLink : ""}`} href={hash}>{name}</Link>
+                        ))}
                     </div>
                 </div>
                 <div className={styles.banner}>
@@ -90,7 +92,7 @@ export default function Index({ }) {
                                     style: ""
                                 },
                             ].map(({ line, style }) => (
-                                <div className={`${styles.line} line`}>
+                                <div className={`${styles.line} line`} key={line}>
                                     <div className={`${style} text`}>{line}</div>
                                 </div>
                             ))}
@@ -108,7 +110,7 @@ export default function Index({ }) {
                                     component: <GitHubIcon style={{ fontSize: "2rem" }} />
                                 },
                                 {
-                                    href: "https://ng.linkedin.com/in/logan10927_",
+                                    href: "https://ng.linkedin.com/in/logan10927",
                                     component: <LinkedInIcon style={{ fontSize: "2rem" }} />
                                 },
                                 {
@@ -116,12 +118,14 @@ export default function Index({ }) {
                                     component: <TwitterIcon style={{ fontSize: "2rem" }} />
                                 },
                             ].map(({ href, component }) => (
-                                <span><a href={href}>{component}</a></span>
+                                <span key={href}><a href={href}>{component}</a></span>
 
                             ))}
                         </div>
                         <div className={styles.resume}>
-                            DOWNLOAD RESUME
+                            <a href="/resume.pdf" download>
+                                DOWNLOAD RESUME
+                            </a>
                         </div>
                     </div>
                 </div>

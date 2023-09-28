@@ -23,7 +23,7 @@ export default function Index({ }) {
                                 {[
                                     "Html & Css", "Typescript", "React", "Express", "Git", "MongoDb"
                                 ].map((skill) => (
-                                    <div className={`${styles.line} line`}>
+                                    <div key={skill} className={`${styles.line} line`}>
                                         <div className='text'>{skill}</div>
                                     </div>
                                 ))}

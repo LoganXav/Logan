@@ -41,7 +41,7 @@ export default function Index({ }) {
                                         company: "Consol Limited"
                                     },
                                 ].map(({ time, role, company }) => (
-                                <div className={`${styles.line} line`}>
+                                <div key={company} className={`${styles.line} line`}>
                                     <div className='text'>{time}</div>
                                     <div className='text'>
                                         <p>{role}</p>
@@ -74,35 +74,35 @@ export default function Index({ }) {
                                     {
                                         name: "Steex",
                                         stack: "React, MUI, Express",
-                                        href1: "#",
+                                        href1: "https://github.com/LoganXav/Steex",
                                         href2: "https://steex.vercel.app/"
                                     },
                                     {
                                         name: "Nexus",
                                         stack: "React, Strapi, Stripe",
-                                        href1: "#",
+                                        href1: "https://github.com/LoganXav/Nexus-emart",
                                         href2: "https://nexus-emart.vercel.app/"
                                     },
                                     {
                                         name: "Cassie",
-                                        stack: "  React, Scss, Framer motion",
-                                        href1: "#",
+                                        stack: "React, Typescript, Scss, Framer motion",
+                                        href1: "https://github.com/LoganXav/Cassie",
                                         href2: "https://cassie.vercel.app/"
                                     },
                                     {
                                         name: "Wild Book",
-                                        stack: "React, Express, Stripe",
-                                        href1: "#",
+                                        stack: "React, Typescript, Express, Stripe",
+                                        href1: "https://github.com/LoganXav/WildBook",
                                         href2: "https://wild-book.vercel.app/"
                                     },
                                     {
                                         name: "Logan",
-                                        stack: "React, MUI, Express",
+                                        stack: "React, Scss, Gsap",
                                         href1: "",
                                         href2: ""
                                     },
                                 ].map(({ name, stack, href1, href2 }) => (
-                                <div className={`${styles.line} line`}>
+                                <div key={name} className={`${styles.line} line`}>
                                     <div className={styles.text}>
                                         <div>{name}</div>
                                         <div className={styles.details}>
