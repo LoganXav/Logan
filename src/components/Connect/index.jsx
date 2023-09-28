@@ -46,11 +46,11 @@ export default function Index() {
                                     },
                                     {
                                         link: "Github",
-                                        url: "https://instagram.com/ssegun__"
+                                        url: "https://github.com/LoganXav"
                                     },
                                     {
                                         link: "LinkedIn",
-                                        url: "https://instagram.com/ssegun__"
+                                        url: "https://www.linked.com/in/logan10927"
                                     },
                                     { link: "Mail" },
                                 ].map(({ link, url }, index) => (

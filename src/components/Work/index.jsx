@@ -27,7 +27,7 @@ export default function Index({ }) {
                                 {[
                                     {
                                         time: "NOW",
-                                        role: "Frontend Engineer Intern",
+                                        role: "Frontend Engineer",
                                         company: "Simplify Technologies"
                                     },
                                     {
@@ -98,8 +98,8 @@ export default function Index({ }) {
                                     {
                                         name: "Logan",
                                         stack: "React, MUI, Express",
-                                        href1: "#",
-                                        href2: "#"
+                                        href1: "",
+                                        href2: ""
                                     },
                                 ].map(({ name, stack, href1, href2 }) => (
                                 <div className={`${styles.line} line`}>
@@ -111,7 +111,7 @@ export default function Index({ }) {
                                             </span>
                                             <span className={styles.redirects}>
                                                 <a href={href1}>{href1 ? "Github" : ""}</a>
-                                                <a href={href2}>Website</a>
+                                                <a href={href2}>{href2 ? "Website" : ""}</a>
                                             </span>
                                         </div>
                                     </div>
