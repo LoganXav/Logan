@@ -11,7 +11,7 @@ export default function Index({ setIsHovered }) {
                 <div className={styles.experienceBody}>
                     <div className={styles.experienceContainer}>
                         <h3 className="headerText">Experience</h3>
-                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}> Only 3 years of actual experience through freelance work and decent internships with smart people that actually know what they're doing.</p>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}> Only 2 years of actual experience through freelance work and decent internships with smart people that actually know what they're doing.</p>
                         <h3 className={`${styles.history} headerText`}>History</h3>
                     </div>
 
@@ -39,13 +39,13 @@ export default function Index({ setIsHovered }) {
                                         company: "Consol Limited"
                                     },
                                 ].map(({ time, role, company }) => (
-                                <div key={company} className={`${styles.line} line`}>
-                                    <div className='text'>{time}</div>
-                                    <div className='text'>
-                                        <p>{role}</p>
-                                        <p className={styles.role}>{company}</p>
+                                    <div key={company} className={`${styles.line} line`}>
+                                        <div className='text'>{time}</div>
+                                        <div className='text'>
+                                            <p>{role}</p>
+                                            <p className={styles.role}>{company}</p>
+                                        </div>
                                     </div>
-                                </div>
                                 ))}
                             </h1>
                         </div>
@@ -65,7 +65,7 @@ export default function Index({ setIsHovered }) {
                     <div className={styles.projectsTitleContainer}>
                         <div className={styles.wrapper}>
                             <h1 className={styles.services}>
-                            {[
+                                {[
                                     {
                                         name: "Steex",
                                         stack: "React, MUI, Express",
@@ -97,20 +97,20 @@ export default function Index({ setIsHovered }) {
                                         href2: ""
                                     },
                                 ].map(({ name, stack, href1, href2 }) => (
-                                <div key={name} className={`${styles.line} line`}>
-                                    <div className={styles.text}>
-                                        <div>{name}</div>
-                                        <div className={styles.details}>
-                                            <span className={styles.stack}>
-                                                {stack}
-                                            </span>
-                                            <span className={styles.redirects}>
-                                                <a href={href1}>{href1 ? "Github" : ""}</a>
-                                                <a href={href2}>{href2 ? "Website" : ""}</a>
-                                            </span>
+                                    <div key={name} className={`${styles.line} line`}>
+                                        <div className={styles.text}>
+                                            <div>{name}</div>
+                                            <div className={styles.details}>
+                                                <span className={styles.stack}>
+                                                    {stack}
+                                                </span>
+                                                <span className={styles.redirects}>
+                                                    <a href={href1}>{href1 ? "Github" : ""}</a>
+                                                    <a href={href2}>{href2 ? "Website" : ""}</a>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 ))}
                             </h1>
                             <div className={styles.balls}>
