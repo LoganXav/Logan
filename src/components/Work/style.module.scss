@@ -270,6 +270,11 @@
                                     text-decoration: underline;
                                     text-transform: none;
 
+                                    @include respond(tab-port) {
+                                        position: relative;
+                                        z-index: 99;
+                                    }
+
                                     a {
                                         &:hover {
                                             color: var(--alternateText);

@@ -11,7 +11,7 @@ export default function Index({ setIsHovered }) {
                 <div className={styles.experienceBody}>
                     <div className={styles.experienceContainer}>
                         <h3 className="headerText">Experience</h3>
-                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}> Only 3 years of actual experience through freelance work and lucky internships with smart people that actually know what they're doing.</p>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}> Only 3 years of actual experience through freelance work and decent internships with smart people that actually know what they're doing.</p>
                         <h3 className={`${styles.history} headerText`}>History</h3>
                     </div>
 
@@ -56,7 +56,7 @@ export default function Index({ setIsHovered }) {
                 <div className={styles.projectsBody}>
                     <div className={styles.projectsContainer}>
                         <h3 className="headerText">Projects</h3>
-                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>Some web applications I practice new things I learn from the internet that never really materialize into the startup wonders i envisioned.</p>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>Some web applications I practice new things I learn from the internet that never really materialize into the startup wonders I envisioned.</p>
                     </div>
                 </div>
             </main>

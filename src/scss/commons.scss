@@ -26,7 +26,6 @@ a{
     mask-repeat: no-repeat;
     // mask-size: 40px;
     background: var(--alternateText);
-    // opacity: .95;
     position: absolute;
     z-index: 999;
     color: black;
@@ -37,6 +36,7 @@ a{
 
     @include respond(tab-port) {
        opacity: 0 !important;
+       display: none;
     }
   }
   
