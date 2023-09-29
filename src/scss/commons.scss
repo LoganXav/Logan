@@ -35,8 +35,8 @@ a{
     width: 100%;
     height: 100%;
 
-    @include respond(tab-port) {
-       opacity: 0;
+    @include respond(tab-land) {
+       opacity: 0 !important;
     }
   }
   
