@@ -10,27 +10,29 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-export default function Index({  }) {
+export default function Index({ setIsHovered }) {
+
+    // const [isHovered, setIsHovered] = useState(false);
+    // const [isActive, setIsActive] = useState("about");
 
 
-    const [isActive, setIsActive] = useState("about");
+    // const { x, y } = useMousePosition();
 
+    // const size = isHovered ? 300 : 30;
 
-    const { x, y } = useMousePosition();
+    // useEffect(() => {
+    //     const t1 = gsap.timeline()
 
-    useEffect(() => {
-        const t1 = gsap.timeline()
-
-        t1.from('.line .text', {
-            y: 500,
-            ease: "power4.out",
-            delay: 1,
-            duration: 1.8,
-            stagger: {
-                amount: 0.4,
-            }
-        })
-    }, [])
+    //     t1.from('.line .text', {
+    //         y: 500,
+    //         ease: "power4.out",
+    //         delay: 1,
+    //         duration: 1.8,
+    //         stagger: {
+    //             amount: 0.4,
+    //         }
+    //     })
+    // }, [])
 
 
     return (
@@ -57,26 +59,26 @@ export default function Index({  }) {
                                 hash: "#contact"
                             },
                         ].map(({ name, hash }) => (
-                            <Link key={name} className={`${isActive === name ? styles.activeLink : ""}`} href={hash}>{name}</Link>
+                            <Link key={name} href={hash}>{name}</Link>
                         ))}
                     </div>
                 </div>
                 <div className={styles.banner}>
                     <h3 className="headerText">SEGUN SOGBESAN</h3>
-                    <div className={styles.wrapper}>
+                    <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={styles.wrapper}>
                         <h1>
                             {[
                                 {
-                                    line: "Writing",
+                                    line: "Hiding",
                                     style: ""
                                 },
                                 {
-                                    line: "Clean",
-                                    style: "alternate"
+                                    line: "Bad",
+                                    style: ""
                                 },
                                 {
                                     line: "Code",
-                                    style: "alternate"
+                                    style: ""
                                 },
                                 {
                                     line: "Since",
@@ -124,9 +126,6 @@ export default function Index({  }) {
                         </div>
                     </div>
                 </div>
-                 <video autoPlay loop muted className={styles.backgroundVideo}>
-                <source src="https://minhpham.design/assets/video/hero.mp4" type='video/mp4' />
-            </video>
             </div>
             {/* <motion.div className={`${styles.container} mask`}
              animate={{
@@ -177,8 +176,6 @@ export default function Index({  }) {
                     </div>
                 </div>
             </motion.div> */}
-
-           
         </>
     )
 }

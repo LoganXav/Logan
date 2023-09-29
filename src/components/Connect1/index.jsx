@@ -2,7 +2,7 @@
 import styles from './style.module.scss';
 import Link from 'next/link';
 
-export default function Index() {
+export default function Index({ setIsHovered }) {
 
     return (
         <>
@@ -11,18 +11,17 @@ export default function Index() {
                     <div className={styles.mottoContainer}>
                         <h3 className="headerText">Inspiration</h3>
                         <div className={styles.mottoWrapper}>
-                            <h1>
+                            <h1 onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                                 {[
-                                    "Good Design", "Is Honest."
+                                    "Be the best", "At hiding your flaws."
                                 ].map((line) => (
                                     <div key={line} className={`${styles.line} line`}>
                                         <div className='text'>{line}</div>
                                     </div>
                                 ))}
-
                             </h1>
                         </div>
-                        <h3 className="headerText">Minh Pham</h3>
+                        <h3 className="headerText">Sogbesan Segun</h3>
                     </div>
                 </div>
             </main>
