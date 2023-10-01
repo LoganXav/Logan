@@ -56,7 +56,7 @@ export default function Index({ setIsHovered }) {
                 <div className={styles.projectsBody}>
                     <div className={styles.projectsContainer}>
                         <h3 className="headerText">Projects</h3>
-                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>Some web applications I practice new things I learn from the internet that never really materialize into the startup wonders I envisioned.</p>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>Some web applications I practice new concepts and ideas I learn from the internet that never really materialize into the startup wonders I envisioned.</p>
                     </div>
                 </div>
             </main>
