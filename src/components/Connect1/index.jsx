@@ -13,7 +13,7 @@ export default function Index({ setIsHovered }) {
                         <div className={styles.mottoWrapper}>
                             <h1 onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                                 {[
-                                    "Be the best", "At hiding your flaws."
+                                    "Or Just", "Artfully Concealed."
                                 ].map((line) => (
                                     <div key={line} className={`${styles.line} line`}>
                                         <div className='text'>{line}</div>
