@@ -21,7 +21,7 @@ export default function Index({ }) {
                         <div className={styles.wrapper}>
                             <h1 className={styles.services}>
                                 {[
-                                    "Html & Css", "Typescript", "React", "Express", "Git", "MongoDb"
+                                    "Html & Css", "Typescript", "React", "Express", "MongoDb", "Git"
                                 ].map((skill) => (
                                     <div key={skill} className={`${styles.line} line`}>
                                         <div className='text'>{skill}</div>
