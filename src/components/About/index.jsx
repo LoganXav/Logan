@@ -10,7 +10,7 @@ export default function Index({ }) {
                 <div className={styles.aboutBody}>
                     <div className={styles.aboutContainer}>
                         <h3 className="headerText">About Me</h3>
-                        <p>I'm a selectively skilled<span className="alternate"> web developer</span> with a strong focus on producing high quality & impactful digital experiences.</p>
+                        <p className={styles.aboutText}>I'm a selectively skilled<span className="alternate"> web developer</span> with a strong focus on producing high quality & impactful digital experiences.</p>
                     </div>
                 </div>
             </main>
