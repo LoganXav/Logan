@@ -95,7 +95,7 @@ export default function Index({ }) {
                                     },
                                     {
                                         name: "Logan",
-                                        stack: "React, Scss, Gsap",
+                                        stack: "Next, Scss, Gsap",
                                         href1: "",
                                         href2: ""
                                     },

@@ -92,7 +92,7 @@ export default function Index({ setIsHovered }) {
                                     },
                                     {
                                         name: "Logan",
-                                        stack: "React, Scss, Gsap",
+                                        stack: "Next, Scss, Gsap",
                                         href1: "",
                                         href2: ""
                                     },
