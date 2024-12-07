@@ -1,6 +1,6 @@
-"use client"
-import styles from "./style.module.scss"
-import { scrollToSection } from "../Landing"
+"use client";
+import styles from "./style.module.scss";
+import { scrollToSection } from "../Landing";
 
 export default function Index({}) {
   return (
@@ -30,6 +30,7 @@ export default function Index({}) {
                   "Typescript",
                   "ReactJs",
                   "NextJs",
+                  "React Native",
                   "NodeJs",
                   "PostgreSQL",
                   "MongoDb",
@@ -37,7 +38,7 @@ export default function Index({}) {
                   "Docker",
                   "CI/CD",
                   "Kubernetes",
-                  "AWS"
+                  "AWS",
                 ].map((skill) => (
                   <div key={skill} className={`${styles.line} line`}>
                     <div className="text">{skill}</div>
@@ -49,5 +50,5 @@ export default function Index({}) {
         </div>
       </main>
     </>
-  )
+  );
 }

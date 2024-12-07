@@ -1,5 +1,5 @@
-"use client"
-import styles from "./style.module.scss"
+"use client";
+import styles from "./style.module.scss";
 
 export default function Index({ setIsHovered }) {
   return (
@@ -31,6 +31,7 @@ export default function Index({ setIsHovered }) {
                   "Typescript",
                   "ReactJs",
                   "NextJs",
+                  "React Native",
                   "NodeJs",
                   "PostgreSQL",
                   "MongoDb",
@@ -38,7 +39,7 @@ export default function Index({ setIsHovered }) {
                   "Docker",
                   "CI/CD",
                   "Kubernetes",
-                  "AWS"
+                  "AWS",
                 ].map((skill) => (
                   <div key={skill} className={`${styles.line} line`}>
                     <div className="text">{skill}</div>
@@ -50,5 +51,5 @@ export default function Index({ setIsHovered }) {
         </div>
       </main>
     </>
-  )
+  );
 }

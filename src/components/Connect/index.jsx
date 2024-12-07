@@ -1,6 +1,6 @@
-"use client"
-import styles from "./style.module.scss"
-import Link from "next/link"
+"use client";
+import styles from "./style.module.scss";
+import Link from "next/link";
 
 export default function Index() {
   return (
@@ -31,28 +31,28 @@ export default function Index() {
                 {[
                   {
                     link: "Resume",
-                    url: "/resume.pdf"
+                    url: "/resume.pdf",
                   },
                   {
                     link: "Instagram",
-                    url: "https://instagram.com/ssegun__"
+                    url: "https://instagram.com/ssegun__",
                   },
                   {
                     link: "Twitter",
-                    url: "https://twitter.com/Ssegun_"
+                    url: "https://twitter.com/Ssegun_",
                   },
                   {
                     link: "Github",
-                    url: "https://github.com/LoganXav"
+                    url: "https://github.com/LoganXav",
                   },
                   {
                     link: "LinkedIn",
-                    url: "https://www.linked.com/in/logan10927"
+                    url: "https://www.linked.com/in/logan10927",
                   },
                   {
                     link: "Mail",
-                    url: "mailto:sogbesansegun22@gmail.com"
-                  }
+                    url: "mailto:sogbesansegun22@gmail.com",
+                  },
                 ].map(({ link, url }, index) => (
                   <div key={url} className={styles.bullet}>
                     <span className={styles.dot}></span>
@@ -81,7 +81,7 @@ export default function Index() {
                 </div>
                 <div>
                   <p>Phone</p>
-                  <span>+2349068015741</span>
+                  <span>+2347043138914</span>
                 </div>
               </div>
             </div>
@@ -90,5 +90,5 @@ export default function Index() {
         </div>
       </main>
     </>
-  )
+  );
 }
