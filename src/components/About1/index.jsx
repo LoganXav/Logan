@@ -13,7 +13,7 @@ export default function Index({ setIsHovered }) {
               onMouseLeave={() => setIsHovered(false)}
             >
               When I'm not playing my guitar, journaling or reading a book, sure
-              I'll write some code... but only if there's good pizza.
+              I'll write some code... if there's good pizza.
             </p>
           </div>
         </div>
