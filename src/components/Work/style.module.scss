@@ -183,7 +183,7 @@
       }
 
       .wrapper {
-        font-size: var(--bannerTextSize);
+        font-size: var(--workTextSize);
         line-height: 165%;
         letter-spacing: -0.15em;
         text-transform: uppercase;
@@ -191,11 +191,11 @@
         // z-index: 900;
 
         @include respond(tab-land) {
-          font-size: var(--bannerTabletTextSize);
+          font-size: var(--workTabletTextSize);
         }
 
         @include respond(tab-port) {
-          font-size: var(--bannerMobileTextSize);
+          font-size: var(--workMobileTextSize);
         }
 
         .imgContainer {
@@ -249,8 +249,14 @@
                 position: relative;
                 z-index: 0;
                 display: flex;
-                gap: 5rem;
+                flex-direction: row;
+                gap: 4rem;
                 font-weight: 400;
+
+                @include respond(phone) {
+                  flex-direction: column;
+                  gap: 0;
+                }
 
                 .stack {
                   line-height: normal;

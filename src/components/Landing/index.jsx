@@ -1,22 +1,22 @@
-"use client"
-import styles from "./style.module.scss"
-import Image from "next/image"
-import Link from "next/link"
-import { useState, useEffect, useRef } from "react"
-import gsap from "gsap"
-import useMousePosition from "../../utils/useMousePosition"
-import InstagramIcon from "@mui/icons-material/Instagram"
-import GitHubIcon from "@mui/icons-material/GitHub"
-import LinkedInIcon from "@mui/icons-material/LinkedIn"
-import TwitterIcon from "@mui/icons-material/Twitter"
+"use client";
+import styles from "./style.module.scss";
+import Image from "next/image";
+import Link from "next/link";
+import { useState, useEffect, useRef } from "react";
+import gsap from "gsap";
+import useMousePosition from "../../utils/useMousePosition";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 export default function Index({}) {
-  const [isActive, setIsActive] = useState("about")
+  const [isActive, setIsActive] = useState("about");
 
-  const { x, y } = useMousePosition()
+  const { x, y } = useMousePosition();
 
   useEffect(() => {
-    const t1 = gsap.timeline()
+    const t1 = gsap.timeline();
 
     t1.from(".line .text", {
       y: 500,
@@ -24,10 +24,10 @@ export default function Index({}) {
       delay: 1,
       duration: 1.8,
       stagger: {
-        amount: 0.4
-      }
-    })
-  }, [])
+        amount: 0.4,
+      },
+    });
+  }, []);
 
   return (
     <>
@@ -48,16 +48,16 @@ export default function Index({}) {
             {[
               {
                 name: "about",
-                hash: "#about"
+                hash: "#about",
               },
               {
                 name: "work",
-                hash: "#work"
+                hash: "#work",
               },
               {
                 name: "contact",
-                hash: "#contact"
-              }
+                hash: "#contact",
+              },
             ].map(({ name, hash }) => (
               <Link
                 key={name}
@@ -76,24 +76,24 @@ export default function Index({}) {
               {[
                 {
                   line: "Writing",
-                  style: ""
+                  style: "",
                 },
                 {
                   line: "Clean",
-                  style: "alternate"
+                  style: "alternate",
                 },
                 {
                   line: "Code",
-                  style: "alternate"
+                  style: "alternate",
                 },
                 {
                   line: "Since",
-                  style: ""
+                  style: "",
                 },
                 {
                   line: "2019",
-                  style: ""
-                }
+                  style: "",
+                },
               ].map(({ line, style }) => (
                 <div className={`${styles.line} line`} key={line}>
                   <div className={`${style} text`}>{line}</div>
@@ -106,20 +106,20 @@ export default function Index({}) {
               {[
                 {
                   href: "https://instagram.com/ssegun__",
-                  component: <InstagramIcon style={{ fontSize: "2rem" }} />
+                  component: <InstagramIcon style={{ fontSize: "2rem" }} />,
                 },
                 {
                   href: "https://github.com/LoganXav",
-                  component: <GitHubIcon style={{ fontSize: "2rem" }} />
+                  component: <GitHubIcon style={{ fontSize: "2rem" }} />,
                 },
                 {
                   href: "https://ng.linkedin.com/in/logan10927",
-                  component: <LinkedInIcon style={{ fontSize: "2rem" }} />
+                  component: <LinkedInIcon style={{ fontSize: "2rem" }} />,
                 },
                 {
                   href: "https://twitter.com/Ssegun_",
-                  component: <TwitterIcon style={{ fontSize: "2rem" }} />
-                }
+                  component: <TwitterIcon style={{ fontSize: "2rem" }} />,
+                },
               ].map(({ href, component }, idx) => (
                 <span key={idx}>
                   <a href={href} rel="noopener noreferrer" target="_blank">
@@ -135,7 +135,13 @@ export default function Index({}) {
             </div>
           </div>
         </div>
-        <video autoPlay loop muted className={styles.backgroundVideo}>
+        <video
+          playsinline
+          autoPlay
+          loop
+          muted
+          className={styles.backgroundVideo}
+        >
           <source
             src="https://minhpham.design/assets/video/hero.mp4"
             type="video/mp4"
@@ -192,5 +198,5 @@ export default function Index({}) {
                 </div>
             </motion.div> */}
     </>
-  )
+  );
 }

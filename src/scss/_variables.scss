@@ -1,60 +1,66 @@
 :root {
 
-    // COLOR
-    --primaryText: #b7ab98;
-    // --primaryText: #f1f1f1;
+  // COLOR
+  --primaryText: #b7ab98;
+  // --primaryText: #f1f1f1;
 
-    --secondaryText: #2a2824;
-    
-    
-    --linkText: #746d5e;
-
-    // --alternateText: #39eb51;
-    // --alternateText: #080707;
-    --alternateText: #eb5939;
-
-    --primaryBg: #0d0d0d;
+  --secondaryText: #2a2824;
 
 
-    // PADDING
-    --pagePadding: 0 7rem;
-    --pageMobilePadding: 0 3.5rem;
-    --bodyPadding: 0 12rem;
-    --bodyMobilePadding: 0 3rem;
-    
-    // MARGIN
-    --bodymarginLeft: 12%;
-    --bodyMobileMarginLeft: 2.9rem;
-    
+  --linkText: #746d5e;
 
-    // FONT SIZE
-    --headerTextSize: 1.5rem;
-    --headerMobileTextSize: 2rem;
+  // --alternateText: #39eb51;
+  // --alternateText: #080707;
+  --alternateText: #eb5939;
+
+  --primaryBg: #0d0d0d;
 
 
-    --navTextSize: 1.5rem;
-    --navMobileTextSize: 1.9rem;
+  // PADDING
+  --pagePadding: 0 7rem;
+  --pageMobilePadding: 0 3.5rem;
+  --bodyPadding: 0 12rem;
+  --bodyMobilePadding: 0 3rem;
 
-    --bannerTextSize: 6.275rem;
-    --bannerTabletTextSize: 4rem;
-    --bannerMobileTextSize: 5.3rem;         // new
-
-
-    --servicesTextSize: 6rem;
-    --servicesMobileTextSize: 5.8rem;
-
-
-    --historyTextSize: 1.8rem;
-    --historyMobileTextSize: 2rem;          // new
-
-    --bodyMdTextSize: 7.5rem;
-    --bodyMobileMdTextSize: 6.6rem;              // new
-    --bodyTabletMdTextSize: 5.6rem;
-
-    --bodyMdFontWeight: 700;
+  // MARGIN
+  --bodymarginLeft: 12%;
+  --bodyMobileMarginLeft: 2.9rem;
 
 
+  // FONT SIZE
+  --headerTextSize: 1.5rem;
+  --headerMobileTextSize: 2rem;
 
-    // --secondary-shadow: rgba(2, 12, 27, 0.7);
+
+  --navTextSize: 1.5rem;
+  --navMobileTextSize: 1.9rem;
+
+  --bannerTextSize: 6.275rem;
+  --bannerTabletTextSize: 4rem;
+  --bannerMobileTextSize: 5.3rem; // new
+
+
+  --servicesTextSize: 6rem;
+  --servicesTabletTextSize: 5.8rem;
+  --servicesMobileTextSize: 4.2rem;
+
+
+  --workTextSize: 6rem;
+  --workTabletTextSize: 5.8rem;
+  --workMobileTextSize: 4.2rem;
+
+
+  --historyTextSize: 1.8rem;
+  --historyMobileTextSize: 1.6rem; // new
+
+  --bodyMdTextSize: 7.5rem;
+  --bodyMobileMdTextSize: 6.6rem; // new
+  --bodyTabletMdTextSize: 5.6rem;
+
+  --bodyMdFontWeight: 700;
+
+
+
+  // --secondary-shadow: rgba(2, 12, 27, 0.7);
 
 }
