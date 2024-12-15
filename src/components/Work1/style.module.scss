@@ -180,7 +180,7 @@
       }
 
       .wrapper {
-        font-size: var(--bannerTextSize);
+        font-size: var(--workTextSize);
         line-height: 165%;
         letter-spacing: -0.15em;
         text-transform: uppercase;
@@ -188,11 +188,11 @@
         z-index: 900;
 
         @include respond(tab-land) {
-          font-size: var(--bannerTabletTextSize);
+          font-size: var(--workTabletTextSize);
         }
 
         @include respond(tab-port) {
-          font-size: var(--bannerMobileTextSize);
+          font-size: var(--workMobileTextSize);
         }
 
         h1 {
