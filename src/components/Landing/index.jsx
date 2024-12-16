@@ -140,6 +140,8 @@ export default function Index({}) {
           autoPlay
           loop
           muted
+          disablePictureInPicture
+          controlsList="nodownload nofullscreen noremoteplayback"
           className={styles.backgroundVideo}
         >
           <source
