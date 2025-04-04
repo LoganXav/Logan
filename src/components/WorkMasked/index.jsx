@@ -109,8 +109,8 @@ export default function Index({ setIsHovered }) {
                   },
                   {
                     name: "My Portfolio",
-                    stack: "Next, Scss, Gsap",
-                    href1: "",
+                    stack: "Next, Scss, Framer Motion",
+                    href1: "https://github.com/LoganXav/Logan",
                     href2: "",
                   },
                 ].map(({ name, stack, href1, href2 }) => (
