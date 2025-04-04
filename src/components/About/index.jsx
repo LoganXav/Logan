@@ -1,6 +1,5 @@
 "use client";
 import styles from "./style.module.scss";
-import { scrollToSection } from "../Landing";
 
 export default function Index({}) {
   return (
@@ -11,8 +10,7 @@ export default function Index({}) {
             <h3 className="headerText">About Me</h3>
             <p className={styles.aboutText}>
               I'm a selectively skilled
-              <span className="alternate"> web developer</span> with a strong
-              focus on producing high quality & impactful digital experiences.
+              <span className="alternate"> web developer</span> with a strong focus on producing high quality & impactful digital experiences.
             </p>
           </div>
         </div>
@@ -23,23 +21,7 @@ export default function Index({}) {
             <h3 className="headerText">What I Work With</h3>
             <div className={styles.wrapper}>
               <h1 className={styles.services}>
-                {[
-                  "Html & Css",
-                  "Tailwind",
-                  "Javascript",
-                  "Typescript",
-                  "ReactJs",
-                  "NextJs",
-                  "React Native",
-                  "NodeJs",
-                  "PostgreSQL",
-                  "MongoDb",
-                  "Git",
-                  "Docker",
-                  "CI/CD",
-                  "Kubernetes",
-                  "AWS",
-                ].map((skill) => (
+                {["Typescript", "Python", "Golang", "C#", ".NET", "ReactJs", "NextJs", "React Native", "NodeJs", "SQL", "Git", "Docker", "CI/CD", "AWS"].map((skill) => (
                   <div key={skill} className={`${styles.line} line`}>
                     <div className="text">{skill}</div>
                   </div>

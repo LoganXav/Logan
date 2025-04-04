@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import styles from "./style.module.scss";
-import { useRef } from "react";
 
 export default function Index({ setIsHovered }) {
   return (
@@ -10,12 +8,8 @@ export default function Index({ setIsHovered }) {
         <div className={styles.experienceBody}>
           <div className={styles.experienceContainer}>
             <h3 className="headerText">Experience</h3>
-            <p
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              3+ years of experience building fintech apps and centering divs on
-              teams with smart people that actually know what they're doing.
+            <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+              3+ years of experience building fintech apps and centering divs on teams with smart people that actually know what they're doing.
             </p>
             <h3 className={`${styles.history} headerText`}>History</h3>
           </div>
@@ -29,13 +23,19 @@ export default function Index({ setIsHovered }) {
                 {[
                   {
                     time: "NOW",
+                    role: "SeniorSoftware Engineer",
+                    company: "Netchex",
+                    link: "https://www.netchex.com/",
+                  },
+                  {
+                    time: "2024",
                     role: "Senior Frontend Engineer",
                     company: "Optimus AI Labs",
                     link: "https://optimusai.ai/",
                   },
                   {
                     time: "2023",
-                    role: "Frontend Engineer",
+                    role: "Software Engineer",
                     company: "Simplify Technologies",
                     link: "https://www.simplifytechnologies.io/",
                   },
@@ -56,12 +56,7 @@ export default function Index({ setIsHovered }) {
                     <div className="text">{time}</div>
                     <div className="text">
                       <p>{role}</p>
-                      <a
-                        className={styles.role}
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <a className={styles.role} href={link} target="_blank" rel="noopener noreferrer">
                         {company}
                       </a>
                     </div>
@@ -76,13 +71,8 @@ export default function Index({ setIsHovered }) {
         <div className={styles.projectsBody}>
           <div className={styles.projectsContainer}>
             <h3 className="headerText">Projects</h3>
-            <p
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              Some web applications I practice new concepts and ideas I learn
-              from the internet that never really materialize into the startup
-              wonders I envisioned.
+            <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+              Some web applications I practice new concepts and ideas I learn from the internet that never really materialize into the startup wonders I envisioned.
             </p>
           </div>
         </div>
@@ -130,18 +120,10 @@ export default function Index({ setIsHovered }) {
                       <div className={styles.details}>
                         <span className={styles.stack}>{stack}</span>
                         <span className={styles.redirects}>
-                          <a
-                            href={href1}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                          >
+                          <a href={href1} rel="noopener noreferrer" target="_blank">
                             {href1 ? "Github" : ""}
                           </a>
-                          <a
-                            href={href2}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                          >
+                          <a href={href2} rel="noopener noreferrer" target="_blank">
                             {href2 ? "Website" : ""}
                           </a>
                         </span>

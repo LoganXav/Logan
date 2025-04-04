@@ -2,33 +2,12 @@
 import styles from "./style.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
-import gsap from "gsap";
-import useMousePosition from "../../utils/useMousePosition";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-export default function Index({}) {
-  const [isActive, setIsActive] = useState("about");
-
-  const { x, y } = useMousePosition();
-
-  useEffect(() => {
-    const t1 = gsap.timeline();
-
-    t1.from(".line .text", {
-      y: 500,
-      ease: "power4.out",
-      delay: 1,
-      duration: 1.8,
-      stagger: {
-        amount: 0.4,
-      },
-    });
-  }, []);
-
+export default function Index({ setIsHovered }) {
   return (
     <>
       <div className={styles.container}>
@@ -53,7 +32,7 @@ export default function Index({}) {
                 hash: "#contact",
               },
             ].map(({ name, hash }) => (
-              <Link key={name} className={`${isActive === name ? styles.activeLink : ""}`} href={hash}>
+              <Link key={name} href={hash}>
                 {name}
               </Link>
             ))}
@@ -61,27 +40,27 @@ export default function Index({}) {
         </div>
         <div className={styles.banner}>
           <h3 className="headerText">SEGUN SOGBESAN</h3>
-          <div className={styles.wrapper}>
+          <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={styles.wrapper}>
             <h1>
               {[
                 {
-                  line: "Writing",
+                  line: "Hiding",
                   style: "",
                 },
                 {
-                  line: "Clean",
-                  style: "alternate",
+                  line: "Bad",
+                  style: "",
                 },
                 {
                   line: "Code",
-                  style: "alternate",
+                  style: "",
                 },
                 {
                   line: "Since",
                   style: "",
                 },
                 {
-                  line: "2019",
+                  line: "2021",
                   style: "",
                 },
               ].map(({ line, style }) => (
@@ -125,9 +104,6 @@ export default function Index({}) {
             </div>
           </div>
         </div>
-        <video playsinline autoPlay loop muted disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback" className={styles.backgroundVideo}>
-          <source src="https://minhpham.design/assets/video/hero.mp4" type="video/mp4" />
-        </video>
       </div>
     </>
   );

@@ -62,11 +62,7 @@ export default function Index() {
                           {link}
                         </Link>
                       ) : (
-                        <Link
-                          href={url}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
+                        <Link href={url} rel="noopener noreferrer" target="_blank">
                           {link}
                         </Link>
                       )}
@@ -86,7 +82,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <span className={styles.credit}>Credit: Minh Pham</span>
+          <span className={styles.credit}>Design Credit: Minh Pham</span>
         </div>
       </main>
     </>

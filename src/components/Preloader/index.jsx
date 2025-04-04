@@ -1,15 +1,27 @@
-'use client';
-import styles from './style.module.scss';
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { opacity, slideUp, fadeIn } from './anim';
-import Image from 'next/image';
+"use client";
+import styles from "./style.module.scss";
+import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { opacity, slideUp, fadeIn } from "./anim";
+import Image from "next/image";
 
 // const words = ["Developer", "Designer", "Engineer", "Programmer", "Writer", "Developer", "Designer", "Engineer", "Programmer", "Writer", "Enter"]
 
 export default function Index({ setIsLoading }) {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
+
+  const videoRef = useRef(null);
+
+  const handleButtonClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 100);
+  };
 
   // useEffect(() => {
   //   if (index == words.length - 1) return;
@@ -18,30 +30,26 @@ export default function Index({ setIsLoading }) {
   //   }, index == 0 ? 1000 : 150)
   // }, [index])
 
-
   useEffect(() => {
-    setDimension({ width: window.innerWidth, height: window.innerHeight })
-  }, [])
+    setDimension({ width: window.innerWidth, height: window.innerHeight });
+  }, []);
 
-
-  const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`
-  const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`
+  const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`;
+  const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`;
 
   const curve = {
     initial: {
       d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] }
+      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 }
-    }
-  }
-
-
+      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
+    },
+  };
 
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const initialValue = "Proceed";
+  const initialValue = "Get Started";
   const [text, setText] = useState(initialValue);
 
   const handleMouseOver = () => {
@@ -69,25 +77,36 @@ export default function Index({ setIsLoading }) {
 
   return (
     <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
-      {dimension.width > 0 &&
+      {dimension.width > 0 && (
         <>
-
           <motion.div variants={fadeIn} initial="initial" animate="enter" className={styles.start}>
-            <Image className={styles.img} src='/logo.gif' alt='preloaderLogo' width={70} height={70} />
+            <Image className={styles.img} src="/logo.gif" alt="preloaderLogo" width={70} height={70} />
+
+            {/* <video
+              ref={videoRef}
+              src="https://web.steep.app/assets/door-300p-black-BUPZS7eZ.mp4"
+              muted
+              preload="auto"
+              playsInline
+              width={200}
+            ></video> */}
+
             {/* <motion.div variants={opacity} initial="initial" animate="enter" className={styles.text}>
               <span className={styles.bullet}></span>
               <p>
                 {words[index]}
               </p>
             </motion.div> */}
-            <button onClick={() => setIsLoading(false)} className={styles.button} onMouseOver={handleMouseOver}>{text}</button>
+            <button onClick={handleButtonClick} className={styles.button} onMouseOver={handleMouseOver}>
+              {text}
+            </button>
             {/* <h1 onMouseOver={handleMouseOver}>{text}</h1> */}
           </motion.div>
           <svg>
             <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
           </svg>
         </>
-      }
-    </motion.div >
-  )
+      )}
+    </motion.div>
+  );
 }

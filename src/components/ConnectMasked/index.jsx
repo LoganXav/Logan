@@ -1,6 +1,6 @@
-"use client"
-import styles from "./style.module.scss"
-import Link from "next/link"
+"use client";
+import styles from "./style.module.scss";
+import Link from "next/link";
 
 export default function Index({ setIsHovered }) {
   return (
@@ -10,10 +10,7 @@ export default function Index({ setIsHovered }) {
           <div className={styles.mottoContainer}>
             <h3 className="headerText">Inspiration</h3>
             <div className={styles.mottoWrapper}>
-              <h1
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
+              <h1 onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                 {["Or Just", "Artfully Concealed."].map((line) => (
                   <div key={line} className={`${styles.line} line`}>
                     <div className="text">{line}</div>
@@ -34,28 +31,28 @@ export default function Index({ setIsHovered }) {
                 {[
                   {
                     link: "Resume",
-                    url: "/resume.pdf"
+                    url: "/resume.pdf",
                   },
                   {
                     link: "Instagram",
-                    url: "https://instagram.com/ssegun__"
+                    url: "https://instagram.com/ssegun__",
                   },
                   {
                     link: "Twitter",
-                    url: "https://twitter.com/Ssegun_"
+                    url: "https://twitter.com/Ssegun_",
                   },
                   {
                     link: "Github",
-                    url: "https://github.com/LoganXav"
+                    url: "https://github.com/LoganXav",
                   },
                   {
                     link: "LinkedIn",
-                    url: "https://www.linked.com/in/logan10927"
+                    url: "https://www.linked.com/in/logan10927",
                   },
                   {
                     link: "Mail",
-                    url: "mailto:sogbesansegun22@gmail.com"
-                  }
+                    url: "mailto:sogbesansegun22@gmail.com",
+                  },
                 ].map(({ link, url }, index) => (
                   <div key={url} className={styles.bullet}>
                     <span className={styles.dot}></span>
@@ -65,11 +62,7 @@ export default function Index({ setIsHovered }) {
                           {link}
                         </Link>
                       ) : (
-                        <Link
-                          href={url}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
+                        <Link href={url} rel="noopener noreferrer" target="_blank">
                           {link}
                         </Link>
                       )}
@@ -89,9 +82,9 @@ export default function Index({ setIsHovered }) {
               </div>
             </div>
           </div>
-          <span className={styles.credit}>Credit: Minh Pham</span>
+          <span className={styles.credit}>Design Credit: Minh Pham</span>
         </div>
       </main>
     </>
-  )
+  );
 }
