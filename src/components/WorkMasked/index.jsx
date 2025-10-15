@@ -32,6 +32,12 @@ export default function Index({ setIsHovered }) {
                     link: "https://www.netchex.com/",
                   },
                   {
+                    time: "NOW",
+                    role: "Full Stack Engineer",
+                    company: "Indicina Technologies",
+                    link: "https://indicina.co/",
+                  },
+                  {
                     time: "2024",
                     role: "Senior Frontend Engineer",
                     company: "Optimus AI Labs",
@@ -103,12 +109,12 @@ export default function Index({ setIsHovered }) {
                     href1: "https://github.com/LoganXav/Steex",
                     href2: "https://steex.vercel.app/",
                   },
-                  {
-                    name: "Golfnco",
-                    stack: "NextJs, Supabase, Paystack, Flutterwave",
-                    href1: "https://github.com/LoganXav/Golfnco",
-                    href2: "https://golfnco.vercel.app/",
-                  },
+                  // {
+                  //   name: "Golfnco",
+                  //   stack: "NextJs, Supabase, Paystack, Flutterwave",
+                  //   href1: "https://github.com/LoganXav/Golfnco",
+                  //   href2: "https://golfnco.vercel.app/",
+                  // },
                   {
                     name: "ReactCli",
                     stack: "NodeJs, CommanderJs, Clack",

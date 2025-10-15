@@ -11,7 +11,12 @@ export default function Index({}) {
           <div className={styles.experienceContainer}>
             <h3 className="headerText">Experience</h3>
             <p>
-              With <span className="alternate">years of collaborative experience</span> in cross-functional teams, delivering digital products built to the highest industry standards.
+              With{" "}
+              <span className="alternate">
+                years of collaborative experience
+              </span>{" "}
+              in cross-functional teams, delivering digital products built to
+              the highest industry standards.
             </p>
             <h3 className={`${styles.history} headerText`}>History</h3>
           </div>
@@ -28,6 +33,12 @@ export default function Index({}) {
                     role: "Senior Software Engineer",
                     company: "Netchex",
                     link: "https://www.netchex.com/",
+                  },
+                  {
+                    time: "NOW",
+                    role: "Full Stack Engineer",
+                    company: "Indicina Technologies",
+                    link: "https://indicina.co/",
                   },
                   {
                     time: "2024",
@@ -58,7 +69,12 @@ export default function Index({}) {
                     <div className="text">{time}</div>
                     <div className="text">
                       <p>{role}</p>
-                      <a className={styles.role} href={link} target="_blank" rel="noopener noreferrer">
+                      <a
+                        className={styles.role}
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {company}
                       </a>
                     </div>
@@ -75,7 +91,9 @@ export default function Index({}) {
             <h3 className="headerText">Projects</h3>
             <p>
               Explore my portfolio of
-              <span className="alternate"> past projects</span> where I've brought ideas to life and delivered exceptional digital solutions that make a difference.
+              <span className="alternate"> past projects</span> where I've
+              brought ideas to life and delivered exceptional digital solutions
+              that make a difference.
             </p>
           </div>
         </div>
@@ -85,7 +103,13 @@ export default function Index({}) {
           <div className={styles.projectsTitleContainer}>
             <div className={styles.wrapper}>
               <div className={styles.imgContainer}>
-                <Image className={styles.img} src="/planet.png" alt="planetImage" width={900} height={900} />
+                <Image
+                  className={styles.img}
+                  src="/planet.png"
+                  alt="planetImage"
+                  width={900}
+                  height={900}
+                />
               </div>
               <h1 className={styles.services}>
                 {[
@@ -95,12 +119,12 @@ export default function Index({}) {
                     href1: "https://github.com/LoganXav/Steex",
                     href2: "https://steex.vercel.app/",
                   },
-                  {
-                    name: "Golfnco",
-                    stack: "NextJs, Supabase, Paystack, Flutterwave",
-                    href1: "https://github.com/LoganXav/Golfnco",
-                    href2: "https://golfnco.vercel.app/",
-                  },
+                  // {
+                  //   name: "Golfnco",
+                  //   stack: "NextJs, Supabase, Paystack, Flutterwave",
+                  //   href1: "https://github.com/LoganXav/Golfnco",
+                  //   href2: "https://golfnco.vercel.app/",
+                  // },
                   {
                     name: "ReactCli",
                     stack: "NodeJs, CommanderJs, Clack",
@@ -126,10 +150,18 @@ export default function Index({}) {
                       <div className={styles.details}>
                         <span className={styles.stack}>{stack}</span>
                         <span className={styles.redirects}>
-                          <a href={href1} rel="noopener noreferrer" target="_blank">
+                          <a
+                            href={href1}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
                             {href1 ? "Github" : ""}
                           </a>
-                          <a href={href2} rel="noopener noreferrer" target="_blank">
+                          <a
+                            href={href2}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
                             {href2 ? "Website" : ""}
                           </a>
                         </span>
