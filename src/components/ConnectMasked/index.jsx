@@ -10,7 +10,10 @@ export default function Index({ setIsHovered }) {
           <div className={styles.mottoContainer}>
             <h3 className="headerText">Inspiration</h3>
             <div className={styles.mottoWrapper}>
-              <h1 onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+              <h1
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
                 {["Or Just", "Artfully Concealed."].map((line) => (
                   <div key={line} className={`${styles.line} line`}>
                     <div className="text">{line}</div>
@@ -62,7 +65,11 @@ export default function Index({ setIsHovered }) {
                           {link}
                         </Link>
                       ) : (
-                        <Link href={url} rel="noopener noreferrer" target="_blank">
+                        <Link
+                          href={url}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
                           {link}
                         </Link>
                       )}
@@ -74,10 +81,6 @@ export default function Index({ setIsHovered }) {
                 <div>
                   <p>Email</p>
                   <span>sogbesansegun22@gmail.com</span>
-                </div>
-                <div>
-                  <p>Phone</p>
-                  <span>+2347043138914</span>
                 </div>
               </div>
             </div>

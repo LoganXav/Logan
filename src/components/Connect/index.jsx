@@ -62,7 +62,11 @@ export default function Index() {
                           {link}
                         </Link>
                       ) : (
-                        <Link href={url} rel="noopener noreferrer" target="_blank">
+                        <Link
+                          href={url}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
                           {link}
                         </Link>
                       )}
@@ -74,10 +78,6 @@ export default function Index() {
                 <div>
                   <p>Email</p>
                   <span>sogbesansegun22@gmail.com</span>
-                </div>
-                <div>
-                  <p>Phone</p>
-                  <span>+2347043138914</span>
                 </div>
               </div>
             </div>
